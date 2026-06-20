@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JSON Formatter — Support</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1f2430;
+  }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 2em; }
+  .updated { color: #666; font-size: 0.9em; }
+  code { background: #f0f2f5; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  a { color: #0a66c2; }
+  details {
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    padding: 0.6em 1em;
+    margin-bottom: 0.6em;
+  }
+  details summary { font-weight: 600; cursor: pointer; }
+  details p { margin: 0.6em 0 0.2em; }
+  .contact {
+    background: #f0f2f5;
+    border-radius: 8px;
+    padding: 1em 1.2em;
+  }
+</style>
+</head>
+<body>
+
+<h1>Support for JSON Formatter</h1>
+<p class="updated">Last updated: June 19, 2026</p>
+
+<p>JSON Formatter is a Safari Web Extension that detects raw JSON responses by looking at a
+page's actual content, and renders them as a readable, collapsible, syntax-highlighted view.
+This page covers how to turn it on, how to use it, and how to get help if something isn't
+working.</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open <strong>Safari → Settings → Extensions</strong> and turn on <strong>JSON
+  Formatter</strong>.</li>
+  <li>Visit any page that returns a raw JSON response (for example, opening an API endpoint
+  directly in a tab). The page will automatically switch to the formatted, collapsible
+  view.</li>
+  <li>Click the JSON Formatter icon in Safari's toolbar to see whether JSON was detected on
+  the current page and to toggle formatting on or off.</li>
+</ol>
+
+<h2>Using the formatted view</h2>
+<ul>
+  <li><strong>Expand All / Collapse All</strong> — open or close every node in the tree at
+  once.</li>
+  <li><strong>Filter keys or values</strong> — type in the search box to highlight matching
+  keys and values and automatically expand the tree down to them.</li>
+  <li><strong>Raw</strong> — switch to the original, unformatted text of the response.</li>
+  <li><strong>Copy</strong> — copies the full, pretty-printed JSON to your clipboard.</li>
+  <li><strong>Save</strong> — downloads the JSON to a file.</li>
+</ul>
+<p>Very large documents start partially collapsed so the page stays responsive; use
+<strong>Expand All</strong> if you want to see everything at once.</p>
+
+<h2>Turning formatting on or off</h2>
+<p>Use the toolbar popup to control JSON Formatter:</p>
+<ul>
+  <li><strong>Enabled everywhere</strong> turns the extension on or off globally.</li>
+  <li><strong>Enabled on &lt;site&gt;</strong> turns formatting on or off just for the
+  current site, leaving every other site unaffected.</li>
+</ul>
+<p>These settings are stored locally in Safari and are never synced or transmitted
+anywhere.</p>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+  <summary>A page that looks like JSON isn't being formatted. Why?</summary>
+  <p>JSON Formatter only reformats a page when its <em>entire</em> body is a single valid
+  JSON document — it never looks at the URL, file extension, or HTTP headers. If the page
+  also contains HTML markup, multiple top-level elements, or any non-JSON text, it's left
+  completely untouched. Also check the toolbar popup: it tells you whether JSON was detected
+  and whether formatting is currently on for that site.</p>
+</details>
+
+<details>
+  <summary>A normal HTML page got reformatted unexpectedly.</summary>
+  <p>This shouldn't happen — detection only triggers when a page's rendered body is exactly
+  one JSON value and nothing else. If you find a page where this isn't the case, please get
+  in touch (see below) with the URL so it can be fixed.</p>
+</details>
+
+<details>
+  <summary>I turned off formatting for a site, but it's still showing the raw view I expect to be formatted.</summary>
+  <p>Toggling "Enabled on &lt;site&gt;" off shows the original, unformatted response for that
+  host. Turn it back on in the popup, or use "Enabled everywhere" to restore formatting
+  globally.</p>
+</details>
+
+<details>
+  <summary>Does JSON Formatter send my data anywhere?</summary>
+  <p>No. It runs entirely on your device, makes no network requests, and has no analytics,
+  crash reporting, or third-party SDKs. See the
+  <a href="SafariJSON-Privacy-policy.html">Privacy Policy</a> for details.</p>
+</details>
+
+<details>
+  <summary>Why does the extension need access to all websites?</summary>
+  <p>Because JSON can be returned from any domain, JSON Formatter needs to be able to check
+  the content of any page to decide whether it's a raw JSON response. It only reads the
+  page's own rendered text to make that decision — see the
+  <a href="SafariJSON-Privacy-policy.html">Privacy Policy</a> for the full explanation.</p>
+</details>
+
+<details>
+  <summary>The Copy or Save button didn't do anything.</summary>
+  <p>Copy requires clipboard permission in Safari; if a permission prompt appeared, allow it
+  and try again. Save opens your browser's normal file-save dialog. If either still doesn't
+  work, please report it — see below.</p>
+</details>
+
+<h2>Still need help?</h2>
+<div class="contact">
+  <p>If you've hit a bug, found a site where detection doesn't behave as described above, or
+  have a feature request, email:</p>
+  <p><a href="mailto:support@port21.com">support@port21.com</a></p>
+  <p>Please include the website (if relevant), what you expected to happen, and what
+  happened instead — that's usually enough to track down the issue quickly.</p>
+</div>
+
+</body>
+</html>
