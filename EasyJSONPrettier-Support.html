@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JSON Formatter — Support</title>
+<title>Easy JSON Prettier — Support</title>
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -35,10 +35,10 @@
 </head>
 <body>
 
-<h1>Support for JSON Formatter</h1>
+<h1>Support for Easy JSON Prettier</h1>
 <p class="updated">Last updated: June 19, 2026</p>
 
-<p>JSON Formatter is a Safari Web Extension that detects raw JSON responses by looking at a
+<p>Easy JSON Prettier is a Safari Web Extension that detects raw JSON responses by looking at a
 page's actual content, and renders them as a readable, collapsible, syntax-highlighted view.
 This page covers how to turn it on, how to use it, and how to get help if something isn't
 working.</p>
@@ -50,7 +50,7 @@ working.</p>
   <li>Visit any page that returns a raw JSON response (for example, opening an API endpoint
   directly in a tab). The page will automatically switch to the formatted, collapsible
   view.</li>
-  <li>Click the JSON Formatter icon in Safari's toolbar to see whether JSON was detected on
+  <li>Click the Easy JSON Prettier icon in Safari's toolbar to see whether JSON was detected on
   the current page and to toggle formatting on or off.</li>
 </ol>
 
@@ -68,7 +68,7 @@ working.</p>
 <strong>Expand All</strong> if you want to see everything at once.</p>
 
 <h2>Turning formatting on or off</h2>
-<p>Use the toolbar popup to control JSON Formatter:</p>
+<p>Use the toolbar popup to control Easy JSON Prettier:</p>
 <ul>
   <li><strong>Enabled everywhere</strong> turns the extension on or off globally.</li>
   <li><strong>Enabled on &lt;site&gt;</strong> turns formatting on or off just for the
@@ -81,7 +81,7 @@ anywhere.</p>
 
 <details>
   <summary>A page that looks like JSON isn't being formatted. Why?</summary>
-  <p>JSON Formatter only reformats a page when its <em>entire</em> body is a single valid
+  <p>Easy JSON Prettier only reformats a page when its <em>entire</em> body is a single valid
   JSON document — it never looks at the URL, file extension, or HTTP headers. If the page
   also contains HTML markup, multiple top-level elements, or any non-JSON text, it's left
   completely untouched. Also check the toolbar popup: it tells you whether JSON was detected
@@ -103,7 +103,7 @@ anywhere.</p>
 </details>
 
 <details>
-  <summary>Does JSON Formatter send my data anywhere?</summary>
+  <summary>Does Easy JSON Prettier send my data anywhere?</summary>
   <p>No. It runs entirely on your device, makes no network requests, and has no analytics,
   crash reporting, or third-party SDKs. See the
   <a href="SafariJSON-Privacy-policy.html">Privacy Policy</a> for details.</p>
@@ -111,7 +111,7 @@ anywhere.</p>
 
 <details>
   <summary>Why does the extension need access to all websites?</summary>
-  <p>Because JSON can be returned from any domain, JSON Formatter needs to be able to check
+  <p>Because JSON can be returned from any domain, Easy JSON Prettier needs to be able to check
   the content of any page to decide whether it's a raw JSON response. It only reads the
   page's own rendered text to make that decision — see the
   <a href="SafariJSON-Privacy-policy.html">Privacy Policy</a> for the full explanation.</p>
