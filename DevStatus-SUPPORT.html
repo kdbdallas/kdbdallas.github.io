@@ -49,8 +49,10 @@
 <p class="updated">Dev Status</p>
 
 <p>
-  Dev Status shows the current status of Apple's developer services, such as
-  App Store Connect, TestFlight, and Xcode Cloud, in the App and in Home Screen
+  Dev Status shows the current status of developer services from Apple,
+  GitHub, DigitalOcean, OpenAI, Cloudflare, Docker, npm, Postman, and Ably, such as
+  App Store Connect, GitHub Actions, Cloudflare Workers, and Docker Hub,
+  in the App and in Home Screen
   widgets, and can notify you when a service's status changes. This page covers
   how to use the App and how to reach us if something isn't working as
   expected.
@@ -58,7 +60,7 @@
 
 <h2>How to Use Dev Status</h2>
 <ul>
-  <li><strong>Service List</strong> &mdash; Open the App to see every Apple developer service along with its current status. When Apple has posted a message about an issue or maintenance, it appears below the service name.</li>
+  <li><strong>Service List</strong> &mdash; Open the App to see every provider, listed alphabetically. Tap a provider to show its services, also listed alphabetically, and their current status, and tap it again to hide them. Each provider shows its most serious status and how many of its services have issues or maintenance, even while collapsed. When the provider has posted a message about an issue or maintenance, it appears below the service name. For DigitalOcean and Ably, a product shows an issue if any of its regions has one, and the message starts with the affected region, such as "NYC3." Postman services available in both its US and Europe regions are listed once per region, such as "Postman Login (US)" and "Postman Login (Europe)." OpenAI and Docker services show their status, such as "Partial Outage," without a message. Use the search field to find a service by name.</li>
   <li><strong>Refresh</strong> &mdash; Pull down on the list or tap the refresh button to get the latest status. "Last Updated" at the top of the list shows how long ago the status was checked.</li>
   <li><strong>Automatic Updates</strong> &mdash; While the App is open, Dev Status automatically checks for new status information once the current data is more than 15 minutes old.</li>
   <li><strong>Home Screen Widgets</strong> &mdash; Touch and hold an empty area of your Home Screen, tap "Edit," then "Add Widget," and search for Dev Status. Widgets come in small (one service), medium (up to three services), and large (up to five services) sizes.</li>
@@ -69,7 +71,7 @@
 <h2>What the Colors Mean</h2>
 <ul>
   <li><span class="dot green"></span><strong>Green</strong> &mdash; Operational. No current issues.</li>
-  <li><span class="dot yellow"></span><strong>Yellow</strong> &mdash; Upcoming Maintenance. Apple has scheduled maintenance; the start and end times are shown with the message.</li>
+  <li><span class="dot yellow"></span><strong>Yellow</strong> &mdash; Upcoming Maintenance. The provider has scheduled maintenance; the start and end times are shown with the message.</li>
   <li><span class="dot orange"></span><strong>Orange</strong> &mdash; Maintenance. Maintenance is currently in progress.</li>
   <li><span class="dot red"></span><strong>Red</strong> &mdash; Issue. The service is experiencing an issue or outage.</li>
 </ul>
@@ -79,12 +81,22 @@
 <p><strong>Where does the status information come from?</strong><br>
 Dev Status reads the same information Apple publishes on its
 <a href="https://developer.apple.com/system-status/">Developer System Status</a>
-page. If Apple hasn't posted an issue or maintenance event, Dev Status won't
+page, GitHub publishes on <a href="https://www.githubstatus.com">githubstatus.com</a>,
+DigitalOcean publishes on <a href="https://status.digitalocean.com">status.digitalocean.com</a>,
+OpenAI publishes on <a href="https://status.openai.com">status.openai.com</a>,
+Cloudflare publishes on <a href="https://www.cloudflarestatus.com">cloudflarestatus.com</a>,
+Docker publishes on <a href="https://www.dockerstatus.com">dockerstatus.com</a>,
+npm publishes on <a href="https://status.npmjs.org">status.npmjs.org</a>,
+Postman publishes on <a href="https://status.postman.com">status.postman.com</a>,
+and Ably publishes on <a href="https://status.ably.com">status.ably.com</a>.
+Cloudflare's individual data centers aren't shown, only its products.
+If a provider hasn't posted an issue or maintenance event, Dev Status won't
 show one.</p>
 
-<p><strong>Is Dev Status made by Apple?</strong><br>
+<p><strong>Is Dev Status made by any of the companies whose status it shows?</strong><br>
 No. Dev Status is an independent App and is not affiliated with, endorsed by,
-or sponsored by Apple Inc.</p>
+or sponsored by Apple Inc., GitHub, Inc., DigitalOcean, OpenAI, Cloudflare,
+Docker, npm, Postman, or Ably.</p>
 
 <p><strong>How often does the status update?</strong><br>
 In the App, status is refreshed when it's more than 15 minutes old, and you can
@@ -99,20 +111,23 @@ lets it check for changes even when the App isn't open.</p>
 
 <p><strong>My widget says "No services selected." How do I fix it?</strong><br>
 Touch and hold the widget, tap "Edit Widget," and choose one or more services
-under "Services to Monitor."</p>
+under "Services to Monitor." Use the search field at the top of the list to
+find a service by name, such as "TestFlight," "GitHub Actions," or "Droplets."</p>
 
-<p><strong>Why does Dev Status show something different from Apple's website?</strong><br>
-Dev Status may be up to 15 minutes behind Apple's page. Open the App and pull
+<p><strong>Why does Dev Status show something different from a provider's status page?</strong><br>
+Dev Status may be up to 15 minutes behind their status pages. Open the App and pull
 down to refresh to get the latest status.</p>
 
 <p><strong>I see "Failed to fetch status." What should I do?</strong><br>
-This means Dev Status couldn't reach Apple's status page. Check your internet
+This means Dev Status couldn't reach any of the status pages. If only some of
+them are unreachable, Dev Status keeps showing those providers' most recent
+status and doesn't show this message. Check your internet
 connection and try refreshing again. If Dev Status has checked before, it will
 keep showing the most recent status it received.</p>
 
 <p><strong>Does Dev Status require an internet connection?</strong><br>
 Yes. Dev Status needs an internet connection to get the latest status from
-Apple. Without one, it shows the most recent status it saved.</p>
+each provider. Without one, it shows the most recent status it saved.</p>
 
 <p><strong>Does Dev Status collect any of my data?</strong><br>
 No. Dev Status doesn't require an account and doesn't collect, track, or share
