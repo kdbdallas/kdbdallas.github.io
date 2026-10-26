@@ -50,8 +50,8 @@
 
 <p>
   Dev Status shows the current status of developer services from Apple,
-  GitHub, DigitalOcean, OpenAI, Cloudflare, Docker, npm, Postman, and Ably, such as
-  App Store Connect, GitHub Actions, Cloudflare Workers, and Docker Hub,
+  GitHub, DigitalOcean, OpenAI, Cloudflare, Docker, npm, Postman, Ably, Bitbucket, Buildkite, CircleCI, Codecov, Confluence, Expo, GitLab, HashiCorp, Jira, Snyk, Travis CI, Trello, RubyGems, crates.io, AWS, and Fly.io, such as
+  App Store Connect, GitHub Actions, Cloudflare Workers, Docker Hub, and Bitbucket Pipelines,
   in the App and in Home Screen
   widgets, and can notify you when a service's status changes. This page covers
   how to use the App and how to reach us if something isn't working as
@@ -60,18 +60,19 @@
 
 <h2>How to Use Dev Status</h2>
 <ul>
-  <li><strong>Service List</strong> &mdash; Open the App to see every provider, listed alphabetically. Tap a provider to show its services, also listed alphabetically, and their current status, and tap it again to hide them. Each provider shows its most serious status and how many of its services have issues or maintenance, even while collapsed. When the provider has posted a message about an issue or maintenance, it appears below the service name. For DigitalOcean and Ably, a product shows an issue if any of its regions has one, and the message starts with the affected region, such as "NYC3." Postman services available in both its US and Europe regions are listed once per region, such as "Postman Login (US)" and "Postman Login (Europe)." OpenAI and Docker services show their status, such as "Partial Outage," without a message. Use the search field to find a service by name.</li>
+  <li><strong>Service List</strong> &mdash; Open the App to see every provider, listed alphabetically. Tap a provider to show its services, also listed alphabetically, and their current status, and tap it again to hide them. Each provider shows its most serious status and how many of its services have issues or maintenance, even while collapsed. When the provider has posted a message about an issue or maintenance, it appears below the service name. A long message shows its first four lines; tap More to read the rest, and Less to shorten it again. For DigitalOcean, Ably, and HashiCorp's Consul Dedicated and Vault Dedicated, a product shows an issue if any of its regions has one, and the message starts with the affected region, such as "NYC3." Snyk lists each of its data regions, such as "Snyk US-01 (app.snyk.io)," as one service, and its messages start with the affected products, such as "Snyk Container." AWS lists each of its regions as one service, such as "AWS us-east-1 (N. Virginia)," plus "AWS Global" for products like CloudFront, and its messages start with the affected AWS products. Postman services available in both its US and Europe regions are listed once per region, such as "Postman Login (US)" and "Postman Login (Europe)." OpenAI, Docker, HashiCorp, and Fly.io services show their status, such as "Partial Outage," without a message. Use the search field to find a service by name.</li>
   <li><strong>Refresh</strong> &mdash; Pull down on the list or tap the refresh button to get the latest status. "Last Updated" at the top of the list shows how long ago the status was checked.</li>
-  <li><strong>Automatic Updates</strong> &mdash; While the App is open, Dev Status automatically checks for new status information once the current data is more than 15 minutes old.</li>
-  <li><strong>Home Screen Widgets</strong> &mdash; Touch and hold an empty area of your Home Screen, tap "Edit," then "Add Widget," and search for Dev Status. Widgets come in small (one service), medium (up to three services), and large (up to five services) sizes.</li>
-  <li><strong>Choose Widget Services</strong> &mdash; Touch and hold a Dev Status widget, tap "Edit Widget," and then tap "Services to Monitor" to choose which services that widget shows.</li>
-  <li><strong>Notifications</strong> &mdash; Allow notifications when prompted and Dev Status will alert you when a service reports an issue, has maintenance scheduled or in progress, or returns to normal.</li>
+  <li><strong>Automatic Updates</strong> &mdash; While the App is open, Dev Status automatically checks for new status information once the current data is older than the refresh interval, 15 minutes unless you change it in Settings.</li>
+  <li><strong>Settings</strong> &mdash; Tap the gear button to choose your subscribed services and how often Dev Status refreshes: every 5, 10, 15, 20, or 30 minutes.</li>
+  <li><strong>Home Screen Widgets</strong> &mdash; Touch and hold an empty area of your Home Screen, tap "Edit," then "Add Widget," and search for Dev Status. Widgets come in small, medium, and large sizes, and each size shows as many of your subscribed services as fit, with any that have issues first. When they don't all fit, each service gets a single line so more fit. Tap a service in a medium or large widget to open it in the App.</li>
+  <li><strong>Choose Your Services</strong> &mdash; Open Settings &gt; Subscribed Services in the App and tap a service to subscribe to it. Every Dev Status widget shows the services you subscribe to.</li>
+  <li><strong>Notifications</strong> &mdash; Allow notifications when prompted and Dev Status will alert you when a service you subscribe to reports an issue, has maintenance scheduled or in progress, or returns to normal. Choose your services in Settings &gt; Subscribed Services.</li>
 </ul>
 
 <h2>What the Colors Mean</h2>
 <ul>
   <li><span class="dot green"></span><strong>Green</strong> &mdash; Operational. No current issues.</li>
-  <li><span class="dot yellow"></span><strong>Yellow</strong> &mdash; Upcoming Maintenance. The provider has scheduled maintenance; the start and end times are shown with the message.</li>
+  <li><span class="dot yellow"></span><strong>Yellow</strong> &mdash; Upcoming Maintenance. The provider has scheduled maintenance; the start and end times are shown on their own line, above the message.</li>
   <li><span class="dot orange"></span><strong>Orange</strong> &mdash; Maintenance. Maintenance is currently in progress.</li>
   <li><span class="dot red"></span><strong>Red</strong> &mdash; Issue. The service is experiencing an issue or outage.</li>
 </ul>
@@ -88,34 +89,53 @@ Cloudflare publishes on <a href="https://www.cloudflarestatus.com">cloudflaresta
 Docker publishes on <a href="https://www.dockerstatus.com">dockerstatus.com</a>,
 npm publishes on <a href="https://status.npmjs.org">status.npmjs.org</a>,
 Postman publishes on <a href="https://status.postman.com">status.postman.com</a>,
-and Ably publishes on <a href="https://status.ably.com">status.ably.com</a>.
-Cloudflare's individual data centers aren't shown, only its products.
+Ably publishes on <a href="https://status.ably.com">status.ably.com</a>,
+Bitbucket publishes on <a href="https://bitbucket.status.atlassian.com">bitbucket.status.atlassian.com</a>,
+Buildkite publishes on <a href="https://www.buildkitestatus.com">buildkitestatus.com</a>,
+CircleCI publishes on <a href="https://status.circleci.com">status.circleci.com</a>,
+Codecov publishes on <a href="https://status.codecov.com">status.codecov.com</a>,
+Confluence publishes on <a href="https://confluence.status.atlassian.com">confluence.status.atlassian.com</a>,
+Expo publishes on <a href="https://status.expo.dev">status.expo.dev</a>,
+GitLab publishes on <a href="https://status.gitlab.com">status.gitlab.com</a>,
+HashiCorp publishes on <a href="https://status.hashicorp.com">status.hashicorp.com</a>,
+Jira publishes on <a href="https://jira-software.status.atlassian.com">jira-software.status.atlassian.com</a>,
+Snyk publishes on <a href="https://status.snyk.io">status.snyk.io</a>,
+Travis CI publishes on <a href="https://www.traviscistatus.com">traviscistatus.com</a>,
+Trello publishes on <a href="https://trello.status.atlassian.com">trello.status.atlassian.com</a>,
+RubyGems publishes on <a href="https://status.rubygems.org">status.rubygems.org</a>,
+crates.io publishes on <a href="https://status.crates.io">status.crates.io</a>,
+AWS publishes on its <a href="https://health.aws.amazon.com/health/status">Health Dashboard</a>,
+and Fly.io publishes on <a href="https://status.flyio.net">status.flyio.net</a>.
+Cloudflare's individual data centers aren't shown, only its products, and neither are the Fastly locations RubyGems lists.
 If a provider hasn't posted an issue or maintenance event, Dev Status won't
 show one.</p>
 
 <p><strong>Is Dev Status made by any of the companies whose status it shows?</strong><br>
 No. Dev Status is an independent App and is not affiliated with, endorsed by,
 or sponsored by Apple Inc., GitHub, Inc., DigitalOcean, OpenAI, Cloudflare,
-Docker, npm, Postman, or Ably.</p>
+Docker, npm, Postman, Ably, Atlassian, Buildkite, CircleCI, Harness, Expo, GitLab, HashiCorp, Snyk, Travis CI, RubyGems, the Rust Foundation, Amazon Web Services, or Fly.io.</p>
 
 <p><strong>How often does the status update?</strong><br>
-In the App, status is refreshed when it's more than 15 minutes old, and you can
-pull down to refresh at any time. Widgets update about every 15 minutes, but
+In the App, status is refreshed when it's older than the refresh interval, which
+is 15 minutes unless you change it in Settings, and you can pull down to refresh
+at any time. Widgets update about as often as the refresh interval, but
 iOS decides exactly when widgets refresh, so updates may sometimes take longer.</p>
 
 <p><strong>Why didn't I get a notification?</strong><br>
-First, make sure notifications are turned on in Settings &gt; Notifications
+First, make sure you're subscribed to the service: Dev Status only sends alerts
+for the services you choose in the App's Settings &gt; Subscribed Services. Then
+make sure notifications are turned on in Settings &gt; Notifications
 &gt; Dev Status. Dev Status checks for changes when the App refreshes or when
 one of its widgets updates, so adding a Dev Status widget to your Home Screen
 lets it check for changes even when the App isn't open.</p>
 
-<p><strong>My widget says "No services selected." How do I fix it?</strong><br>
-Touch and hold the widget, tap "Edit Widget," and choose one or more services
-under "Services to Monitor." Use the search field at the top of the list to
-find a service by name, such as "TestFlight," "GitHub Actions," or "Droplets."</p>
+<p><strong>My widget says "No subscribed services." How do I fix it?</strong><br>
+Tap the widget, or open the App and go to Settings &gt; Subscribed Services, and
+subscribe to one or more services. Use the search field to find a service by
+name, such as "TestFlight," "GitHub Actions," or "Droplets."</p>
 
 <p><strong>Why does Dev Status show something different from a provider's status page?</strong><br>
-Dev Status may be up to 15 minutes behind their status pages. Open the App and pull
+Dev Status may be up to one refresh interval (15 minutes by default) behind their status pages. Open the App and pull
 down to refresh to get the latest status.</p>
 
 <p><strong>I see "Failed to fetch status." What should I do?</strong><br>
