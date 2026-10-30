@@ -1,0 +1,783 @@
+{
+  "projects": [
+    {
+      "name": "SimNet",
+      "platform": "Mac",
+      "original": "assets/img/portfolio/SimNet/SimNetIcon-354.png",
+      "icon": "assets/project-0.png",
+      "description": "SimNet Put iOS Simulators into Airplane Mode or onto a slow, lossy network, see the traffic their apps send, and record what happens on screen, all without touching your Mac's own connection. SimNet is a macOS menu bar app with a matching command-line tool. It uses a network system extension that acts only on connections opened by iOS Simulators, so Safari, Slack, Xcode and everything else on your Mac keep their normal network.",
+      "links": [
+        {
+          "label": Coming Soon,
+          "url": ""
+        }
+      ],
+      "image": "assets/screen-0.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-SimNet-0.png",
+          "alt": "SimNet screenshot 1"
+        },
+        {
+          "src": "assets/gallery-SimNet-1.png",
+          "alt": "SimNet screenshot 2"
+        },
+        {
+          "src": "assets/gallery-SimNet-2.png",
+          "alt": "SimNet screenshot 3"
+        },
+        {
+          "src": "assets/gallery-SimNet-3.png",
+          "alt": "SimNet screenshot 4"
+        }
+      ]
+    },
+    {
+      "name": "Dev Status Check",
+      "platform": "iOS & Mac",
+      "original": "assets/img/portfolio/DevStatusCheck/DevStatusCheckIcon-354.png",
+      "icon": "assets/project-1.png",
+      "description": "Is it your code, or is GitHub down? Dev Status checks the status pages of 40+ services developers depend on and puts them in one list, so you can find out in seconds.<br><br>Subscribe to the services you rely on, and Dev Status will alert you when one reports a problem, goes into maintenance, or comes back up. Add a widget and you'll see trouble on your Home Screen before you go looking for it.<br><br>ALERTS<br>Only the services you subscribe to send notifications. If all you care about is GitHub Actions and TestFlight, you won't hear about a Zoom outage.<br><br>WIDGETS<br>Small, medium, and large widgets list your subscribed services with the worst problems at the top. When they don't all fit, rows shrink to make room and the widget tells you how many it couldn't show. Tap one to open that service in the app.<br><br>THE FULL LIST<br>Every provider has its own section. Collapsed, it still shows the worst status inside and how many services have problems. Filter down to issues or maintenance, or search for the service you're after. The provider's latest update appears right under each service, and scheduled maintenance shows its start and end times.<br><br>Red is an issue, orange is maintenance in progress, yellow is maintenance coming up, and green means it's working.<br><br>Refresh any time, or let the app refresh itself.<br><br>NO ACCOUNTS, NO TRACKING<br>There are no ads, analytics, or third-party SDKs, and nothing to sign up for. Dev Status reads each provider's public status page directly, and alerts are created on your device, not pushed from a server.<br><br>Dev Status is an independent app and isn't affiliated with any other company.",
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/dev-status-check/id6826245367"
+        }
+      ],
+      "image": "assets/screen-1.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-DevStatusCheck-0.png",
+          "alt": "Dev Status Check screenshot 1"
+        },
+        {
+          "src": "assets/gallery-DevStatusCheck-1.png",
+          "alt": "Dev Status Check screenshot 2"
+        },
+        {
+          "src": "assets/gallery-DevStatusCheck-2.png",
+          "alt": "Dev Status Check screenshot 3"
+        },
+        {
+          "src": "assets/gallery-DevStatusCheck-3.png",
+          "alt": "Dev Status Check screenshot 4"
+        },
+        {
+          "src": "assets/gallery-DevStatusCheck-4.png",
+          "alt": "Dev Status Check screenshot 5"
+        }
+      ]
+    },
+    {
+      "name": "Zelle",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/Zelle/ZelleIcon.png",
+      "icon": "assets/project-6.png",
+      "description": "Zelle Zelle\u00ae is a great way to send money to friends and family, even if they bank somewhere different than you do. That means it's super easy to get paid back, or split the costs of things like dinner. With Zelle\u00ae, the money goes directly into your bank account. And when money goes into your bank account directly, you can live delightfully. Zelle\u00ae is already in lots of banking apps, so look for it in yours today.",
+      "links": [
+        {
+          "label": "www.zellepay.com",
+          "url": "https://www.zellepay.com"
+        }
+      ],
+      "image": "assets/screen-6.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-zelle-details-0.png",
+          "alt": "Zelle screenshot 1"
+        },
+        {
+          "src": "assets/gallery-zelle-details-1.png",
+          "alt": "Zelle screenshot 2"
+        },
+        {
+          "src": "assets/gallery-zelle-details-2.png",
+          "alt": "Zelle screenshot 3"
+        },
+        {
+          "src": "assets/gallery-zelle-details-3.png",
+          "alt": "Zelle screenshot 4"
+        },
+        {
+          "src": "assets/gallery-zelle-details-4.png",
+          "alt": "Zelle screenshot 5"
+        },
+        {
+          "src": "assets/gallery-zelle-details-5.png",
+          "alt": "Zelle screenshot 6"
+        },
+        {
+          "src": "assets/gallery-zelle-details-6.png",
+          "alt": "Zelle screenshot 7"
+        },
+        {
+          "src": "assets/gallery-zelle-details-7.png",
+          "alt": "Zelle screenshot 8"
+        },
+        {
+          "src": "assets/gallery-zelle-details-8.png",
+          "alt": "Zelle screenshot 9"
+        }
+      ]
+    },
+    {
+      "name": "Golfshot",
+      "platform": "iPhone/iPad/Watch",
+      "original": "assets/img/portfolio/Golfshot/GolfShotIcon.png",
+      "icon": "assets/project-7.png",
+      "description": "Golfshot The world\u2019s most powerful and trusted on-course golf GPS, scoring, statistics, and auto shot tracking app. All from your iPhone, iPad, or Apple Watch.",
+      "links": [
+        {
+          "label": "golfshot.com",
+          "url": "https://golfshot.com"
+        }
+      ],
+      "image": "assets/screen-7.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-golfshot-details-0.png",
+          "alt": "Golfshot screenshot 1"
+        },
+        {
+          "src": "assets/gallery-golfshot-details-1.png",
+          "alt": "Golfshot screenshot 2"
+        },
+        {
+          "src": "assets/gallery-golfshot-details-2.png",
+          "alt": "Golfshot screenshot 3"
+        }
+      ]
+    },
+    {
+      "name": "eShow",
+      "platform": "iOS & Android",
+      "original": "assets/img/portfolio/eShow/eShowIcon-534.png",
+      "icon": "assets/project-2.png",
+      "description": "eShow The central hub for all your conferences and events. Find and access your events, utilizing our many great features including: agenda setting, interactive event maps, social networking, and up-to-the-minute event updates sent directly to your device. Sync your account across all of your devices and get the most out of what your events have to offer with the eShow Events app.",
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/eshow-events/id1307773162"
+        }
+      ],
+      "image": "assets/screen-2.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-eShow-0.png",
+          "alt": "eShow screenshot 1"
+        },
+        {
+          "src": "assets/gallery-eShow-1.png",
+          "alt": "eShow screenshot 2"
+        },
+        {
+          "src": "assets/gallery-eShow-2.png",
+          "alt": "eShow screenshot 3"
+        },
+        {
+          "src": "assets/gallery-eShow-3.png",
+          "alt": "eShow screenshot 4"
+        }
+      ]
+    },
+    {
+      "name": "KDB Dashboard",
+      "platform": "Apple TV",
+      "original": "assets/img/portfolio/KDBDashboard/Icon_532.png",
+      "icon": "assets/project-3.png",
+      "description": "Turn your Apple TV into a family dashboard: your Google and iCloud calendars, a slideshow from your favorite album, and the weather, all on one screen.",
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/kdbdashboard/id6758755677"
+        }
+      ],
+      "image": "assets/screen-3.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-KDBDashboard-0.png",
+          "alt": "KDB Dashboard screenshot 1"
+        },
+        {
+          "src": "assets/gallery-KDBDashboard-1.png",
+          "alt": "KDB Dashboard screenshot 2"
+        },
+        {
+          "src": "assets/gallery-KDBDashboard-2.png",
+          "alt": "KDB Dashboard screenshot 3"
+        },
+        {
+          "src": "assets/gallery-KDBDashboard-3.png",
+          "alt": "KDB Dashboard screenshot 4"
+        },
+        {
+          "src": "assets/gallery-KDBDashboard-4.png",
+          "alt": "KDB Dashboard screenshot 5"
+        }
+      ]
+    },
+    {
+      "name": "Tipper",
+      "platform": "iOS",
+      "original": "assets/img/portfolio/Tipper/TipperIcon-354.png",
+      "icon": "assets/project-4.png",
+      "description": "Easily figure out the tip you want to give. Get amounts for standard percentages, select a custom percentage, and even enter how much you want to spend total and get the appropriate tip amount. Stop doing the math in your head or reaching for a calculator. Find what you want quickly and easily.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kdbdallas/Tipper"
+        }
+      ],
+      "image": "assets/screen-4.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-tipper-0.png",
+          "alt": "Tipper screenshot 1"
+        },
+        {
+          "src": "assets/gallery-tipper-1.png",
+          "alt": "Tipper screenshot 2"
+        }
+      ]
+    },
+    {
+      "name": "Easy JSON Prettier",
+      "platform": "Safari Extension",
+      "original": "assets/img/portfolio/EasyJSONPrettier/EasyJsonPrettierIcon-354.png",
+      "icon": "assets/project-5.png",
+      "description": "Easy JSON Prettier Make JSON in your browser Pretty while respecting your privacy. Finds JSON by content and content only, not by file extensions or headers. Make your JSON pretty and easy to manage. No network connections, no sniffing, your data stays local and is never seen. Just JSON how you want it.",
+      "links": [
+        {
+          "label": "Mac App Store",
+          "url": "https://apps.apple.com/us/app/easy-json-prettier/id6782286551?mt=12\nEasy JSON Prettier"
+        }
+      ],
+      "image": "assets/screen-5.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-easy_json_prettier-details-0.png",
+          "alt": "Easy JSON Prettier screenshot 1"
+        },
+        {
+          "src": "assets/gallery-easy_json_prettier-details-1.png",
+          "alt": "Easy JSON Prettier screenshot 2"
+        },
+        {
+          "src": "assets/gallery-easy_json_prettier-details-2.png",
+          "alt": "Easy JSON Prettier screenshot 3"
+        },
+        {
+          "src": "assets/gallery-easy_json_prettier-details-3.png",
+          "alt": "Easy JSON Prettier screenshot 4"
+        }
+      ]
+    },
+    {
+      "name": "iDeskCal",
+      "platform": "Mac",
+      "original": "assets/img/portfolio/iDeskCal/iDeskCalIcon.png",
+      "icon": "assets/project-8.png",
+      "description": "Have your calendar and to-do items show directly on your desktop so they are easily viewable. Allows you to add calendar events and to-dos from directly in the app with just a simple key command. Never miss another appointment with iDeskCal.",
+      "links": [],
+      "image": "assets/screen-8.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-ideskcal-details-0.png",
+          "alt": "iDeskCal screenshot 1"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-1.png",
+          "alt": "iDeskCal screenshot 2"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-2.png",
+          "alt": "iDeskCal screenshot 3"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-3.png",
+          "alt": "iDeskCal screenshot 4"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-4.png",
+          "alt": "iDeskCal screenshot 5"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-5.png",
+          "alt": "iDeskCal screenshot 6"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-6.png",
+          "alt": "iDeskCal screenshot 7"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-7.png",
+          "alt": "iDeskCal screenshot 8"
+        },
+        {
+          "src": "assets/gallery-ideskcal-details-8.png",
+          "alt": "iDeskCal screenshot 9"
+        }
+      ]
+    },
+    {
+      "name": "Newsprint",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/Newsprint/NewsprintIcon.png",
+      "icon": "assets/project-9.png",
+      "description": "Your RSS feeds in your pocket, always ready to read no matter where you are. Never miss out on another post from your favorite sites.",
+      "links": [],
+      "image": "assets/screen-9.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-newsprint-details-0.png",
+          "alt": "Newsprint screenshot 1"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-1.png",
+          "alt": "Newsprint screenshot 2"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-2.png",
+          "alt": "Newsprint screenshot 3"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-3.png",
+          "alt": "Newsprint screenshot 4"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-4.png",
+          "alt": "Newsprint screenshot 5"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-5.png",
+          "alt": "Newsprint screenshot 6"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-6.png",
+          "alt": "Newsprint screenshot 7"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-7.png",
+          "alt": "Newsprint screenshot 8"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-8.png",
+          "alt": "Newsprint screenshot 9"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-9.png",
+          "alt": "Newsprint screenshot 10"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-10.png",
+          "alt": "Newsprint screenshot 11"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-11.png",
+          "alt": "Newsprint screenshot 12"
+        },
+        {
+          "src": "assets/gallery-newsprint-details-12.png",
+          "alt": "Newsprint screenshot 13"
+        }
+      ]
+    },
+    {
+      "name": "Shipment",
+      "platform": "Mac & iPhone",
+      "original": "assets/img/portfolio/Shipment/ShipmentIcon.png",
+      "icon": "assets/project-10.png",
+      "description": "Know when your package is delivered, and who it was left with.<br>Know when your spouse gets her birthday gift from Amazon.<br>Know when your business contract is delivered and who signed for it.<br><br>All automatically, at the same time, with absolutely no effort.",
+      "links": [],
+      "image": "assets/screen-10.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-shipment-details-0.png",
+          "alt": "Shipment screenshot 1"
+        },
+        {
+          "src": "assets/gallery-shipment-details-1.png",
+          "alt": "Shipment screenshot 2"
+        },
+        {
+          "src": "assets/gallery-shipment-details-2.png",
+          "alt": "Shipment screenshot 3"
+        },
+        {
+          "src": "assets/gallery-shipment-details-3.png",
+          "alt": "Shipment screenshot 4"
+        },
+        {
+          "src": "assets/gallery-shipment-details-4.png",
+          "alt": "Shipment screenshot 5"
+        }
+      ]
+    },
+    {
+      "name": "Remind You",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/RemindYou/RemindYouIcon.png",
+      "icon": "assets/project-11.png",
+      "description": "You You will never forget another appointment when your calendar is directly on your iPhone's lock screen. Always know what you have going on next with a simple glance of your phone.",
+      "links": [],
+      "image": "assets/screen-11.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-remindyou-details-0.png",
+          "alt": "Remind You screenshot 1"
+        },
+        {
+          "src": "assets/gallery-remindyou-details-1.png",
+          "alt": "Remind You screenshot 2"
+        }
+      ]
+    },
+    {
+      "name": "What2Text",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/What2Text/What2TextIcon.png",
+      "icon": "assets/project-12.png",
+      "description": "Have you ever received a text from someone and you weren't sure quite how to respond? Reach for What2Text and let your social network give you advice on how to reply in just that perfect way.",
+      "links": [],
+      "image": "assets/screen-12.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-what2text-details-0.png",
+          "alt": "What2Text screenshot 1"
+        },
+        {
+          "src": "assets/gallery-what2text-details-1.png",
+          "alt": "What2Text screenshot 2"
+        },
+        {
+          "src": "assets/gallery-what2text-details-2.png",
+          "alt": "What2Text screenshot 3"
+        },
+        {
+          "src": "assets/gallery-what2text-details-3.png",
+          "alt": "What2Text screenshot 4"
+        },
+        {
+          "src": "assets/gallery-what2text-details-4.png",
+          "alt": "What2Text screenshot 5"
+        },
+        {
+          "src": "assets/gallery-what2text-details-5.png",
+          "alt": "What2Text screenshot 6"
+        }
+      ]
+    },
+    {
+      "name": "Kid Flix",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/KidFlix/KidFlixIcon.png",
+      "icon": "assets/project-13.png",
+      "description": "Allow your kids to use your iPhone to watch their favorite shows, without worrying that they will push a button or quit the app, etc. Features a built in web server to allow you to upload your videos to your device so they are available on the go, and you always know what they are watching.",
+      "links": [],
+      "image": "assets/screen-13.jpg",
+      "screenshots": [
+        {
+          "src": "assets/gallery-kidflix-details-0.jpg",
+          "alt": "Kid Flix screenshot 1"
+        },
+        {
+          "src": "assets/gallery-kidflix-details-1.jpg",
+          "alt": "Kid Flix screenshot 2"
+        },
+        {
+          "src": "assets/gallery-kidflix-details-2.jpg",
+          "alt": "Kid Flix screenshot 3"
+        },
+        {
+          "src": "assets/gallery-kidflix-details-3.jpg",
+          "alt": "Kid Flix screenshot 4"
+        }
+      ]
+    },
+    {
+      "name": "Lacrosse Coach",
+      "platform": "iPad",
+      "original": "assets/img/portfolio/LacrosseCoach/LacrosseCoachIcon.png",
+      "icon": "assets/project-14.png",
+      "description": "The ultimate app for lacrosse coaches. Allowing you to draw up plays, learn drills, keep tabs on players, and more. Take your lacrosse coaching to the next level.",
+      "links": [],
+      "image": "assets/screen-14.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-lacrossecoach-details-0.png",
+          "alt": "Lacrosse Coach screenshot 1"
+        },
+        {
+          "src": "assets/gallery-lacrossecoach-details-1.png",
+          "alt": "Lacrosse Coach screenshot 2"
+        },
+        {
+          "src": "assets/gallery-lacrossecoach-details-2.png",
+          "alt": "Lacrosse Coach screenshot 3"
+        },
+        {
+          "src": "assets/gallery-lacrossecoach-details-3.png",
+          "alt": "Lacrosse Coach screenshot 4"
+        },
+        {
+          "src": "assets/gallery-lacrossecoach-details-4.png",
+          "alt": "Lacrosse Coach screenshot 5"
+        }
+      ]
+    },
+    {
+      "name": "LaxxTV",
+      "platform": "iPad",
+      "original": "assets/img/portfolio/LaxxTV/LaxxTVIcon.png",
+      "icon": "assets/project-15.png",
+      "description": "The way to watch lacrosse! Whether your on the go or just relaxing on the sofa, reach for LaxxTV and see all the lacrosse content that you could want.",
+      "links": [],
+      "image": "assets/screen-15.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-laxxtv-details-0.png",
+          "alt": "LaxxTV screenshot 1"
+        },
+        {
+          "src": "assets/gallery-laxxtv-details-1.png",
+          "alt": "LaxxTV screenshot 2"
+        },
+        {
+          "src": "assets/gallery-laxxtv-details-2.png",
+          "alt": "LaxxTV screenshot 3"
+        },
+        {
+          "src": "assets/gallery-laxxtv-details-3.png",
+          "alt": "LaxxTV screenshot 4"
+        },
+        {
+          "src": "assets/gallery-laxxtv-details-4.png",
+          "alt": "LaxxTV screenshot 5"
+        }
+      ]
+    },
+    {
+      "name": "Citizens Bank",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/CitizensBank/CitizensBankIcon.png",
+      "icon": "assets/project-16.png",
+      "description": "Are you a Citizens Bank customer? Well now you have access to your online banking directly from your iPhone. See your account details, pay bills, make transfers, and more. Your never away from your bank when you have the Citizens Bank app.",
+      "links": [],
+      "image": "assets/screen-16.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-citizensbank-details-0.png",
+          "alt": "Citizens Bank screenshot 1"
+        },
+        {
+          "src": "assets/gallery-citizensbank-details-1.png",
+          "alt": "Citizens Bank screenshot 2"
+        },
+        {
+          "src": "assets/gallery-citizensbank-details-2.png",
+          "alt": "Citizens Bank screenshot 3"
+        }
+      ]
+    },
+    {
+      "name": "iLiveFit",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/iLiveFit/iLiveFitIcon.png",
+      "icon": "assets/project-17.png",
+      "description": "Take your health to the next level with iLiveFit. Track your meals, water, and fitness goals. Get recipes for good healthy food to help you on your journey. Track your weight loss journey and make yourself the best you.",
+      "links": [],
+      "image": "assets/screen-17.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-ilivefit-details-0.png",
+          "alt": "iLiveFit screenshot 1"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-1.png",
+          "alt": "iLiveFit screenshot 2"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-2.png",
+          "alt": "iLiveFit screenshot 3"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-3.png",
+          "alt": "iLiveFit screenshot 4"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-4.png",
+          "alt": "iLiveFit screenshot 5"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-5.png",
+          "alt": "iLiveFit screenshot 6"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-6.png",
+          "alt": "iLiveFit screenshot 7"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-7.png",
+          "alt": "iLiveFit screenshot 8"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-8.png",
+          "alt": "iLiveFit screenshot 9"
+        },
+        {
+          "src": "assets/gallery-ilivefit-details-9.png",
+          "alt": "iLiveFit screenshot 10"
+        }
+      ]
+    },
+    {
+      "name": "Salt Lake Tribune",
+      "platform": "iPad",
+      "original": "assets/img/portfolio/SaltLakeTribune/SaltLakeTribuneIcon.png",
+      "icon": "assets/project-18.png",
+      "description": "Always have the latest news with you when you have the Salt Lake Tribune app. Never miss breaking news again, along with all your other favorite parts of the newspaper. Take the news into your hands with the iPad app.",
+      "links": [],
+      "image": "assets/screen-18.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-saltlaketribune-details-0.png",
+          "alt": "Salt Lake Tribune screenshot 1"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-1.png",
+          "alt": "Salt Lake Tribune screenshot 2"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-2.png",
+          "alt": "Salt Lake Tribune screenshot 3"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-3.png",
+          "alt": "Salt Lake Tribune screenshot 4"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-4.png",
+          "alt": "Salt Lake Tribune screenshot 5"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-5.png",
+          "alt": "Salt Lake Tribune screenshot 6"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-6.png",
+          "alt": "Salt Lake Tribune screenshot 7"
+        },
+        {
+          "src": "assets/gallery-saltlaketribune-details-7.png",
+          "alt": "Salt Lake Tribune screenshot 8"
+        }
+      ]
+    },
+    {
+      "name": "Spoon Me",
+      "platform": "iPhone",
+      "original": "assets/img/portfolio/SpoonMe/SpoonMeIcon.jpg",
+      "icon": "assets/project-19.jpg",
+      "description": "The Spoon Me application allows Spoon Me frozen yogurt customers to find retail locations, check-in to a location, receive location specific specials based on checkin, track loyalty stamps, and broadcast Spoon Me excitement through Twitter and Facebook.",
+      "links": [],
+      "image": "assets/screen-19.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-spoonme-details-0.png",
+          "alt": "Spoon Me screenshot 1"
+        },
+        {
+          "src": "assets/gallery-spoonme-details-1.png",
+          "alt": "Spoon Me screenshot 2"
+        },
+        {
+          "src": "assets/gallery-spoonme-details-2.png",
+          "alt": "Spoon Me screenshot 3"
+        },
+        {
+          "src": "assets/gallery-spoonme-details-3.png",
+          "alt": "Spoon Me screenshot 4"
+        },
+        {
+          "src": "assets/gallery-spoonme-details-4.png",
+          "alt": "Spoon Me screenshot 5"
+        },
+        {
+          "src": "assets/gallery-spoonme-details-5.png",
+          "alt": "Spoon Me screenshot 6"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Mobile Team Lead",
+      "dates": "2025 - Present",
+      "company": "eShow, Remote",
+      "bullets": [
+        "Mobile Team Lead (iOS/Android)",
+        "Team Management and Tight Collaboration with Executive Management, Product, QA, and Client Relations",
+        "Creation of New Features and Bug Fixes of all Mobile Applications",
+        "Refactoring of Code to Proper MVVM Pattern Usage"
+      ]
+    },
+    {
+      "role": "Senior iOS Developer",
+      "dates": "2016 - 2025",
+      "company": "Zelle (Early Warning), Hybrid/Scottsdale, Arizona",
+      "bullets": [
+        "First Team Lead for Zelle apps (iOS app built using Swift)",
+        "Prototyped how QR codes could be used with Zelle",
+        "Built a fully featured budgeting app using contributed bank data while utilizing ML built in Python",
+        "Worked on refactoring from the MVC pattern to the MVVM pattern utilizing Combine",
+        "Started work on converting the Zelle app to SwiftUI"
+      ]
+    },
+    {
+      "role": "Lead iOS Developer",
+      "dates": "2013 - 2015",
+      "company": "Shotzoom, Tempe, Arizona",
+      "bullets": [
+        "Developed Golfshot a revolutionary golf app focused on improving your golf game",
+        "Includes features like: Detailed satellite imagery, Real-time GPS distances to the greens, Shot Club Recommendations, 3D Flyover Previews of Holes, and more",
+        "Golfshot was Featured by Apple over 5 different times"
+      ]
+    },
+    {
+      "role": "Owner / Developer",
+      "dates": "2007 - 2015",
+      "company": "HashBang Industries, Phoenix, Arizona",
+      "bullets": [
+        "Technical Editor for Wiley and Sons Publishing \u2018Cocoa Touch for iPhone 3.0\u2019 book",
+        "Technical reviewer for O\u2019Reilly\u2019s \u2018iPhone SDK Application Development\u2019, 1st Edition, book.",
+        "iDeskCal (formally Desktop Remind) (Apple Sta\ufb00 Pick) - Mac",
+        "Contracted with Sybase, Inc. working on their iOS banking software that is used by banks around the world",
+        "Contracted on converting a Medical Flash presentation for Medtronic to the iPad via Infuse Medical",
+        "Contracted as a iOS specialist to finish up the Salt Lake Tribune iPad App via MediaOne of Utah (Newspaper Agency). - iPad",
+        "Contracted to create a texting social network called What2Text - iPhone (Featured by Apple in Social Networking)"
+      ]
+    },
+    {
+      "role": "Senior iOS Developer",
+      "dates": "2010 - 2011",
+      "company": "Moki Networks, Lehi, Utah",
+      "bullets": [
+        "LiveFit - Fitness and wellbeing app with scheduled meals, exercises and more. - iPhone",
+        "Spoon Me \u2013 Restaurant app and loyalty program - iPhone",
+        "HealthEquity - View account balances/transactions, submit claims - iPhone",
+        "Novatek Executive Dashboard - Executive Reports Viewer - iPad",
+        "Symantec Enterprise App - Prototype internal enterprise app for Symantec - iPad",
+        "On Connect - Point of Sale application, a la Apple Retail Stores, for Vanns (vanns.com) with product lookup, order creation, connection with external device for barcode scanning and credit card swipes. - iPhone"
+      ]
+    },
+    {
+      "role": "Senior Developer",
+      "dates": "2007 - 2009",
+      "company": "PayPal, Scottsdale, Arizona",
+      "bullets": [
+        "Developed an online iPhone web application implementing new API\u2019s for use as a developer reference application",
+        "Adding new features and fixing bugs in the PayPal website"
+      ]
+    }
+  ]
+}
