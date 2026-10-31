@@ -7,7 +7,7 @@ const short = {
   "Dev Status Check": "Cloud & API outage alerts.",
   Switcher: "Turn your photo and video folders into a slideshow for your Mac.",
   "KDB Dashboard": "Calendar, Photos & Weather on your TV.",
-  Zelle: "The number 1 way to instantly send and receive money.",
+  DesktopExtend: "Gives your Mac a second desktop.",
 };
 const esc = (s) =>
   String(s || "").replace(
@@ -80,8 +80,8 @@ fetch("content.json")
       "SimNet",
       "Dev Status Check",
 	  "DesktopExtend",
+	  "Switcher",
       "eShow",
-	  "Zelle",
     ];
     $("#icon-composition").innerHTML = picks
       .map((n) => d.projects.find((p) => p.name === n))
