@@ -67,6 +67,25 @@
         }
       ]
     },
+	{
+      "name": "DesktopExtend",
+      "platform": "Mac",
+      "icon": "assets/DesktopExtend/Icon.png",
+      "description": "Gives your Mac a second desktop that macOS treats as a genuine second monitor. Only one is visible at a time: push the cursor past the edge of the screen and the view scrolls across to the other desktop.\n\nUnlike Spaces, this is a real display — windows can be dragged onto it, it has its own menu bar, apps can be full-screened on it, and window positions persist. Unlike a physical monitor, it shares the one panel you already have.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kdbdallas/DesktopExtend"
+        }
+      ],
+      "image": "assets/DesktopExtend/DesktopExtend_Banner.png",
+      "screenshots": [
+        {
+          "src": "assets/DesktopExtend/DesktopExtend_Banner.png",
+          "alt": "DesktopExtend"
+        }
+      ]
+    },
     {
       "name": "Zelle",
       "platform": "iPhone",
