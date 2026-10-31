@@ -5,7 +5,7 @@ let data,
 const short = {
   SimNet: "Simulator Network Tools & More.",
   "Dev Status Check": "Cloud & API outage alerts.",
-  Switcher: "Turn your photo & video folders into a slideshow for your Mac.",
+  Switcher: "Turn your photo and video folders into a slideshow for your Mac.",
   "KDB Dashboard": "Calendar, Photos & Weather on your TV.",
   Zelle: "The number 1 way to instantly send and receive money.",
 };
