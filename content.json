@@ -35,7 +35,6 @@
     {
       "name": "Dev Status Check",
       "platform": "iOS & Mac",
-      "original": "assets/img/portfolio/DevStatusCheck/DevStatusCheckIcon-354.png",
       "icon": "assets/project-1.png",
       "description": "Is it your code, or is GitHub down? Dev Status checks the status pages of 40+ services developers depend on and puts them in one list, so you can find out in seconds.\n\n\n\nSubscribe to the services you rely on, and Dev Status will alert you when one reports a problem, goes into maintenance, or comes back up. Add a widget and you'll see trouble on your Home Screen before you go looking for it.\n\nALERTS\nOnly the services you subscribe to send notifications. If all you care about is GitHub Actions and TestFlight, you won't hear about a Zoom outage.\n\nWIDGETS\nSmall, medium, and large widgets list your subscribed services with the worst problems at the top. When they don't all fit, rows shrink to make room and the widget tells you how many it couldn't show. Tap one to open that service in the app.\n\nTHE FULL LIST\nEvery provider has its own section. Collapsed, it still shows the worst status inside and how many services have problems. Filter down to issues or maintenance, or search for the service you're after. The provider's latest update appears right under each service, and scheduled maintenance shows its start and end times.\n\nRed is an issue, orange is maintenance in progress, yellow is maintenance coming up, and green means it's working.\n\nRefresh any time, or let the app refresh itself.\n\nNO ACCOUNTS, NO TRACKING\nThere are no ads, analytics, or third-party SDKs, and nothing to sign up for. Dev Status reads each provider's public status page directly, and alerts are created on your device, not pushed from a server.\n\nDev Status is an independent app and isn't affiliated with any other company.",
       "links": [
@@ -71,7 +70,6 @@
     {
       "name": "Zelle",
       "platform": "iPhone",
-      "original": "assets/img/portfolio/Zelle/ZelleIcon.png",
       "icon": "assets/project-6.png",
       "description": "Zelle Zelle\u00ae is a great way to send money to friends and family, even if they bank somewhere different than you do. That means it's super easy to get paid back, or split the costs of things like dinner. With Zelle\u00ae, the money goes directly into your bank account. And when money goes into your bank account directly, you can live delightfully. Zelle\u00ae is already in lots of banking apps, so look for it in yours today.",
       "links": [
@@ -123,9 +121,8 @@
     {
       "name": "Golfshot",
       "platform": "iPhone/iPad/Watch",
-      "original": "assets/img/portfolio/Golfshot/GolfShotIcon.png",
       "icon": "assets/project-7.png",
-      "description": "Golfshot The world\u2019s most powerful and trusted on-course golf GPS, scoring, statistics, and auto shot tracking app. All from your iPhone, iPad, or Apple Watch.",
+      "description": "Golfshot The worlds most powerful and trusted on-course golf GPS, scoring, statistics, and auto shot tracking app. All from your iPhone, iPad, or Apple Watch.",
       "links": [
         {
           "label": "golfshot.com",
@@ -151,8 +148,7 @@
     {
       "name": "eShow",
       "platform": "iOS & Android",
-      "original": "assets/img/portfolio/eShow/eShowIcon-534.png",
-      "icon": "assets/project-2.png",
+      "icon": "assets/eShow/Icon.png",
       "description": "eShow The central hub for all your conferences and events. Find and access your events, utilizing our many great features including: agenda setting, interactive event maps, social networking, and up-to-the-minute event updates sent directly to your device. Sync your account across all of your devices and get the most out of what your events have to offer with the eShow Events app.",
       "links": [
         {
@@ -160,22 +156,22 @@
           "url": "https://apps.apple.com/us/app/eshow-events/id1307773162"
         }
       ],
-      "image": "assets/screen-2.png",
+      "image": "assets/eShow/eShow3.png",
       "screenshots": [
         {
-          "src": "assets/gallery-eShow-0.png",
+          "src": "assets/eShow/eShow1.png",
           "alt": "eShow screenshot 1"
         },
         {
-          "src": "assets/gallery-eShow-1.png",
+          "src": "assets/eShow/eShow2.png",
           "alt": "eShow screenshot 2"
         },
         {
-          "src": "assets/gallery-eShow-2.png",
+          "src": "assets/eShow/eShow3.png",
           "alt": "eShow screenshot 3"
         },
         {
-          "src": "assets/gallery-eShow-3.png",
+          "src": "assets/eShow/eShow4.png",
           "alt": "eShow screenshot 4"
         }
       ]
@@ -183,8 +179,7 @@
     {
       "name": "KDB Dashboard",
       "platform": "Apple TV",
-      "original": "assets/img/portfolio/KDBDashboard/Icon_532.png",
-      "icon": "assets/project-3.png",
+      "icon": "assets/KDBDashboard/Icon.png",
       "description": "Turn your Apple TV into a family dashboard: your Google and iCloud calendars, a slideshow from your favorite album, and the weather, all on one screen.",
       "links": [
         {
@@ -192,26 +187,26 @@
           "url": "https://apps.apple.com/us/app/kdbdashboard/id6758755677"
         }
       ],
-      "image": "assets/screen-3.png",
+      "image": "assets/KDBDashboard/KDBDashboard1.png",
       "screenshots": [
         {
-          "src": "assets/gallery-KDBDashboard-0.png",
+          "src": "assets/KDBDashboard/KDBDashboard1.png",
           "alt": "KDB Dashboard screenshot 1"
         },
         {
-          "src": "assets/gallery-KDBDashboard-1.png",
+          "src": "assets/KDBDashboard/KDBDashboard2.png",
           "alt": "KDB Dashboard screenshot 2"
         },
         {
-          "src": "assets/gallery-KDBDashboard-2.png",
+          "src": "assets/KDBDashboard/KDBDashboard3.png",
           "alt": "KDB Dashboard screenshot 3"
         },
         {
-          "src": "assets/gallery-KDBDashboard-3.png",
+          "src": "assets/KDBDashboard/KDBDashboard4.png",
           "alt": "KDB Dashboard screenshot 4"
         },
         {
-          "src": "assets/gallery-KDBDashboard-4.png",
+          "src": "assets/KDBDashboard/KDBDashboard5.png",
           "alt": "KDB Dashboard screenshot 5"
         }
       ]
@@ -219,8 +214,7 @@
     {
       "name": "Tipper",
       "platform": "iOS",
-      "original": "assets/img/portfolio/Tipper/TipperIcon-354.png",
-      "icon": "assets/project-4.png",
+      "icon": "assets/Tipper/Icon.png",
       "description": "Easily figure out the tip you want to give. Get amounts for standard percentages, select a custom percentage, and even enter how much you want to spend total and get the appropriate tip amount. Stop doing the math in your head or reaching for a calculator. Find what you want quickly and easily.",
       "links": [
         {
@@ -228,14 +222,14 @@
           "url": "https://github.com/kdbdallas/Tipper"
         }
       ],
-      "image": "assets/screen-4.png",
+      "image": "assets/Tipper/Tipper2.png",
       "screenshots": [
         {
-          "src": "assets/gallery-tipper-0.png",
+          "src": "assets/Tipper/Tipper1.png",
           "alt": "Tipper screenshot 1"
         },
         {
-          "src": "assets/gallery-tipper-1.png",
+          "src": "assets/Tipper/Tipper2.png",
           "alt": "Tipper screenshot 2"
         }
       ]
@@ -243,8 +237,7 @@
     {
       "name": "Easy JSON Prettier",
       "platform": "Safari Extension",
-      "original": "assets/img/portfolio/EasyJSONPrettier/EasyJsonPrettierIcon-354.png",
-      "icon": "assets/project-5.png",
+      "icon": "assets/EasyJsonPrettier/Icon.png",
       "description": "Easy JSON Prettier Make JSON in your browser Pretty while respecting your privacy. Finds JSON by content and content only, not by file extensions or headers. Make your JSON pretty and easy to manage. No network connections, no sniffing, your data stays local and is never seen. Just JSON how you want it.",
       "links": [
         {
@@ -252,22 +245,22 @@
           "url": "https://apps.apple.com/us/app/easy-json-prettier/id6782286551?mt=12\nEasy JSON Prettier"
         }
       ],
-      "image": "assets/screen-5.png",
+      "image": "assets/EasyJsonPrettier/EasyJsonPrettier2.png",
       "screenshots": [
         {
-          "src": "assets/gallery-easy_json_prettier-details-0.png",
+          "src": "assets/EasyJsonPrettier/EasyJsonPrettier1.png",
           "alt": "Easy JSON Prettier screenshot 1"
         },
         {
-          "src": "assets/gallery-easy_json_prettier-details-1.png",
+          "src": "assets/EasyJsonPrettier/EasyJsonPrettier2.png",
           "alt": "Easy JSON Prettier screenshot 2"
         },
         {
-          "src": "assets/gallery-easy_json_prettier-details-2.png",
+          "src": "assets/EasyJsonPrettier/EasyJsonPrettier3.png",
           "alt": "Easy JSON Prettier screenshot 3"
         },
         {
-          "src": "assets/gallery-easy_json_prettier-details-3.png",
+          "src": "assets/EasyJsonPrettier/EasyJsonPrettier4.png",
           "alt": "Easy JSON Prettier screenshot 4"
         }
       ]
@@ -275,110 +268,76 @@
     {
       "name": "iDeskCal",
       "platform": "Mac",
-      "original": "assets/img/portfolio/iDeskCal/iDeskCalIcon.png",
-      "icon": "assets/project-8.png",
+      "icon": "assets/iDeskCal/Icon.png",
       "description": "Have your calendar and to-do items show directly on your desktop so they are easily viewable. Allows you to add calendar events and to-dos from directly in the app with just a simple key command. Never miss another appointment with iDeskCal.",
       "links": [],
       "image": "assets/screen-8.png",
       "screenshots": [
         {
-          "src": "assets/gallery-ideskcal-details-0.png",
+          "src": "assets/iDeskCal/iDeskCal1.png",
           "alt": "iDeskCal screenshot 1"
         },
         {
-          "src": "assets/gallery-ideskcal-details-1.png",
+          "src": "assets/iDeskCal/iDeskCal2.png",
           "alt": "iDeskCal screenshot 2"
         },
         {
-          "src": "assets/gallery-ideskcal-details-2.png",
+          "src": "assets/iDeskCal/iDeskCal3.png",
           "alt": "iDeskCal screenshot 3"
         },
         {
-          "src": "assets/gallery-ideskcal-details-3.png",
+          "src": "assets/iDeskCal/iDeskCal4.png",
           "alt": "iDeskCal screenshot 4"
         },
         {
-          "src": "assets/gallery-ideskcal-details-4.png",
+          "src": "assets/iDeskCal/iDeskCal5.png",
           "alt": "iDeskCal screenshot 5"
-        },
-        {
-          "src": "assets/gallery-ideskcal-details-5.png",
-          "alt": "iDeskCal screenshot 6"
-        },
-        {
-          "src": "assets/gallery-ideskcal-details-6.png",
-          "alt": "iDeskCal screenshot 7"
-        },
-        {
-          "src": "assets/gallery-ideskcal-details-7.png",
-          "alt": "iDeskCal screenshot 8"
-        },
-        {
-          "src": "assets/gallery-ideskcal-details-8.png",
-          "alt": "iDeskCal screenshot 9"
         }
       ]
     },
     {
       "name": "Newsprint",
       "platform": "iPhone",
-      "original": "assets/img/portfolio/Newsprint/NewsprintIcon.png",
-      "icon": "assets/project-9.png",
+      "icon": "assets/Newsprint/Icon.png",
       "description": "Your RSS feeds in your pocket, always ready to read no matter where you are. Never miss out on another post from your favorite sites.",
       "links": [],
       "image": "assets/screen-9.png",
       "screenshots": [
         {
-          "src": "assets/gallery-newsprint-details-0.png",
+          "src": "assets/Newsprint/Newsprint1.png",
           "alt": "Newsprint screenshot 1"
         },
         {
-          "src": "assets/gallery-newsprint-details-1.png",
+          "src": "assets/Newsprint/Newsprint2.png",
           "alt": "Newsprint screenshot 2"
         },
         {
-          "src": "assets/gallery-newsprint-details-2.png",
+          "src": "assets/Newsprint/Newsprint3.png",
           "alt": "Newsprint screenshot 3"
         },
         {
-          "src": "assets/gallery-newsprint-details-3.png",
+          "src": "assets/Newsprint/Newsprint4.png",
           "alt": "Newsprint screenshot 4"
         },
         {
-          "src": "assets/gallery-newsprint-details-4.png",
+          "src": "assets/Newsprint/Newsprint5.png",
           "alt": "Newsprint screenshot 5"
         },
         {
-          "src": "assets/gallery-newsprint-details-5.png",
+          "src": "assets/Newsprint/Newsprint6.png",
           "alt": "Newsprint screenshot 6"
         },
         {
-          "src": "assets/gallery-newsprint-details-6.png",
+          "src": "assets/Newsprint/Newsprint7.png",
           "alt": "Newsprint screenshot 7"
         },
         {
-          "src": "assets/gallery-newsprint-details-7.png",
+          "src": "assets/Newsprint/Newsprint8.png",
           "alt": "Newsprint screenshot 8"
         },
         {
-          "src": "assets/gallery-newsprint-details-8.png",
+          "src": "assets/Newsprint/Newsprint9.png",
           "alt": "Newsprint screenshot 9"
-        },
-        {
-          "src": "assets/gallery-newsprint-details-9.png",
-          "alt": "Newsprint screenshot 10"
-        },
-        {
-          "src": "assets/gallery-newsprint-details-10.png",
-          "alt": "Newsprint screenshot 11"
-        },
-        {
-          "src": "assets/gallery-newsprint-details-11.png",
-          "alt": "Newsprint screenshot 12"
-        },
-        {
-          "src": "assets/gallery-newsprint-details-12.png",
-          "alt": "Newsprint screenshot 13"
         }
       ]
     },
@@ -435,61 +394,55 @@
     {
       "name": "What2Text",
       "platform": "iPhone",
-      "original": "assets/img/portfolio/What2Text/What2TextIcon.png",
-      "icon": "assets/project-12.png",
+      "icon": "assets/W2T/Icon.png",
       "description": "Have you ever received a text from someone and you weren't sure quite how to respond? Reach for What2Text and let your social network give you advice on how to reply in just that perfect way.",
       "links": [],
-      "image": "assets/screen-12.png",
+      "image": "assets/W2T/W2T1.png",
       "screenshots": [
         {
-          "src": "assets/gallery-what2text-details-0.png",
+          "src": "assets/W2T/W2T1.png",
           "alt": "What2Text screenshot 1"
         },
         {
-          "src": "assets/gallery-what2text-details-1.png",
+          "src": "assets/W2T/W2T2.png",
           "alt": "What2Text screenshot 2"
         },
         {
-          "src": "assets/gallery-what2text-details-2.png",
+          "src": "assets/W2T/W2T3.png",
           "alt": "What2Text screenshot 3"
         },
         {
-          "src": "assets/gallery-what2text-details-3.png",
+          "src": "assets/W2T/W2T4.png",
           "alt": "What2Text screenshot 4"
         },
         {
-          "src": "assets/gallery-what2text-details-4.png",
+          "src": "assets/W2T/W2T5.png",
           "alt": "What2Text screenshot 5"
-        },
-        {
-          "src": "assets/gallery-what2text-details-5.png",
-          "alt": "What2Text screenshot 6"
         }
       ]
     },
     {
       "name": "Kid Flix",
       "platform": "iPhone",
-      "original": "assets/img/portfolio/KidFlix/KidFlixIcon.png",
-      "icon": "assets/project-13.png",
+      "icon": "assets/KidFlix/Icon.png",
       "description": "Allow your kids to use your iPhone to watch their favorite shows, without worrying that they will push a button or quit the app, etc. Features a built in web server to allow you to upload your videos to your device so they are available on the go, and you always know what they are watching.",
       "links": [],
-      "image": "assets/screen-13.jpg",
+      "image": "assets/KidFlix/KidFlix1.png",
       "screenshots": [
         {
-          "src": "assets/gallery-kidflix-details-0.jpg",
+          "src": "assets/KidFlix/KidFlix1.png",
           "alt": "Kid Flix screenshot 1"
         },
         {
-          "src": "assets/gallery-kidflix-details-1.jpg",
+          "src": "assets/KidFlix/KidFlix2.png",
           "alt": "Kid Flix screenshot 2"
         },
         {
-          "src": "assets/gallery-kidflix-details-2.jpg",
+          "src": "assets/KidFlix/KidFlix3.png",
           "alt": "Kid Flix screenshot 3"
         },
         {
-          "src": "assets/gallery-kidflix-details-3.jpg",
+          "src": "assets/KidFlix/KidFlix4.png",
           "alt": "Kid Flix screenshot 4"
         }
       ]
@@ -527,31 +480,30 @@
     },
     {
       "name": "LaxxTV",
-      "platform": "iPad",
-      "original": "assets/img/portfolio/LaxxTV/LaxxTVIcon.png",
-      "icon": "assets/project-15.png",
+      "platform": "iPhone/iPad",
+      "icon": "assets/LaxxTV/Icon.png",
       "description": "The way to watch lacrosse! Whether your on the go or just relaxing on the sofa, reach for LaxxTV and see all the lacrosse content that you could want.",
       "links": [],
-      "image": "assets/screen-15.png",
+      "image": "assets/LaxxTV/LaxxTV2.png",
       "screenshots": [
         {
-          "src": "assets/gallery-laxxtv-details-0.png",
+          "src": "assets/LaxxTV/LaxxTV1.png",
           "alt": "LaxxTV screenshot 1"
         },
         {
-          "src": "assets/gallery-laxxtv-details-1.png",
+          "src": "assets/LaxxTV/LaxxTV2.png",
           "alt": "LaxxTV screenshot 2"
         },
         {
-          "src": "assets/gallery-laxxtv-details-2.png",
+          "src": "assets/LaxxTV/LaxxTV3.png",
           "alt": "LaxxTV screenshot 3"
         },
         {
-          "src": "assets/gallery-laxxtv-details-3.png",
+          "src": "assets/LaxxTV/LaxxTV4.png",
           "alt": "LaxxTV screenshot 4"
         },
         {
-          "src": "assets/gallery-laxxtv-details-4.png",
+          "src": "assets/LaxxTV/LaxxTV5.png",
           "alt": "LaxxTV screenshot 5"
         }
       ]
