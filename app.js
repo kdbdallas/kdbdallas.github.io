@@ -80,9 +80,9 @@ fetch("content.json")
     const picks = [
       "SimNet",
       "Dev Status Check",
+	  "DesktopExtend",
       "Zelle",
       "Golfshot",
-      "KDB Dashboard",
     ];
     $("#icon-composition").innerHTML = picks
       .map((n) => d.projects.find((p) => p.name === n))
