@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - SimNet</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1c1c1e;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #6e6e73;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+  ul, ol {
+    padding-left: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 10px 6px 0;
+    border-bottom: 1px solid #e5e5ea;
+  }
+  pre {
+    background: #f2f2f7;
+    padding: 12px 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Support</h1>
+<p class="updated">SimNet</p>
+
+<p>
+  SimNet lets you test how your iOS apps cope with bad networks, right in the
+  iOS Simulator. It puts simulators into Airplane Mode or onto a slow, lossy
+  network, shows you the traffic their apps send, and records their screens,
+  all without touching your Mac's own connection. This page covers how to set
+  up and use the App and how to reach us if something isn't working as
+  expected. SimNet requires macOS 15 or later, and Xcode with the iOS
+  simulators you want to use.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>Open SimNet. Its icon appears in the menu bar.</li>
+  <li>Open System Settings &gt; General &gt; Login Items &amp; Extensions &gt; Network Extensions, and turn on <strong>SimNet Proxy</strong>. Until you do, SimNet's menu shows a reminder with a button that takes you there.</li>
+  <li>Click the SimNet icon and turn on the switch at the top. The first time, macOS asks whether SimNet can add proxy configurations; click <strong>Allow</strong>.</li>
+</ol>
+<p>
+  You only need to do steps 2 and 3 once. Your Mac's own connection is never
+  affected, whatever you choose in SimNet.
+</p>
+
+<h2>How to Use SimNet</h2>
+<ul>
+  <li><strong>Network Condition</strong> &mdash; Click the SimNet icon, turn on the switch, and pick a condition. It applies right away, including to connections that are already open, so you can switch to Airplane Mode halfway through a download and see how your app copes. Turn the switch off, or quit SimNet, and simulators have their normal network again.</li>
+  <li><strong>Custom</strong> &mdash; Choose Custom to set your own download and upload speeds, delay, and loss.</li>
+  <li><strong>Simulators</strong> &mdash; Leave All simulators checked to affect every simulator, or check particular booted simulators instead.</li>
+  <li><strong>Only These Apps</strong> &mdash; To affect only certain apps, enter their bundle IDs, such as com.example.MyApp, separated by commas. Leave it empty to affect every app.</li>
+  <li><strong>Localhost</strong> &mdash; Connections to development servers running on your Mac (localhost) are left alone, unless you check Also affect localhost connections.</li>
+  <li><strong>Recently Affected</strong> &mdash; While a condition is on, the menu lists the apps it has affected, with their simulator and how many connections each has opened.</li>
+  <li><strong>Network Logging</strong> &mdash; Turn on Log network traffic to see the requests and responses the apps in your chosen simulators make, including HTTPS and WebSocket traffic. It works with or without a network condition. Choose Show Log to open the log window, where you can sort the log, pause and resume it, clear it, and save it as a JSON file. Double-click an entry, or right-click it and choose View Details, to see its headers, query parameters, timings, TLS details, and body.</li>
+  <li><strong>Screen Recording</strong> &mdash; Under Screen record, choose Record Simulator and pick a booted simulator. A red pill with the time recorded so far appears next to SimNet's icon. Click it, or choose Stop in the menu, then choose where to save the video and its format. Your clicks and drags are drawn into the video as touches, and when you change the network condition while recording, the video briefly says so, such as "Connection: 3G."</li>
+  <li><strong>Open App Data</strong> &mdash; Pick a simulator and one of the apps you've installed on it to open the app's data folder in Finder, with its Documents folder and its UserDefaults plist. It lists every simulator with your apps on it, booted or not.</li>
+  <li><strong>Settings</strong> &mdash; Choose Settings&hellip; in the menu to start SimNet at login, and to turn the touches and connection changes in recordings on or off, or change the touches' color. SimNet always starts with conditions and logging off.</li>
+</ul>
+
+<h2>Network Conditions</h2>
+<table>
+  <tr><th>Condition</th><th>Download</th><th>Upload</th><th>Delay</th><th>Loss</th></tr>
+  <tr><td>Airplane Mode</td><td colspan="4">Every new connection is refused</td></tr>
+  <tr><td>100% Loss</td><td colspan="4">Connections open, but no data ever arrives</td></tr>
+  <tr><td>Edge</td><td>240 Kbps</td><td>200 Kbps</td><td>400 / 440 ms</td><td>0%</td></tr>
+  <tr><td>3G</td><td>780 Kbps</td><td>330 Kbps</td><td>100 ms</td><td>0%</td></tr>
+  <tr><td>Very Bad Network</td><td>1 Mbps</td><td>1 Mbps</td><td>500 ms</td><td>10%</td></tr>
+  <tr><td>DSL</td><td>2 Mbps</td><td>256 Kbps</td><td>5 ms</td><td>0%</td></tr>
+  <tr><td>LTE</td><td>50 Mbps</td><td>10 Mbps</td><td>50 / 65 ms</td><td>0%</td></tr>
+  <tr><td>Wi-Fi</td><td>40 Mbps</td><td>33 Mbps</td><td>1 ms</td><td>0%</td></tr>
+</table>
+<p>
+  These presets approximate Apple's Network Link Conditioner. Delay is added
+  in each direction. On UDP, including QUIC and HTTP/3, lost data is really
+  dropped; on TCP, it shows up as stalls while the data is sent again.
+</p>
+
+<h2>What the Menu Bar Icon Means</h2>
+<ul>
+  <li><strong>SimNet's icon</strong> &mdash; SimNet is off, and simulators have their normal network.</li>
+  <li><strong>Airplane</strong> &mdash; Airplane Mode is on.</li>
+  <li><strong>Wi-Fi with an exclamation mark</strong> &mdash; 100% Loss is on.</li>
+  <li><strong>Tortoise</strong> &mdash; A slow network condition is on.</li>
+  <li><strong>Antenna</strong> &mdash; Network logging is on, with no network condition.</li>
+</ul>
+
+<h2>Command Line</h2>
+<p>
+  Everything in the menu can also be done from Terminal, in scripts, or in
+  CI. First link the command onto your PATH:
+</p>
+<pre>sudo mkdir -p /usr/local/bin
+sudo ln -sf /Applications/SimNet.app/Contents/MacOS/SimNet /usr/local/bin/simnet</pre>
+<p>Then, for example:</p>
+<pre>simnet profiles                                   # list the conditions
+simnet on airplane                                # all simulators, all apps
+simnet on 3g --sim booted                         # only booted simulators
+simnet on edge --sim &lt;UDID&gt; --bundle com.me.App   # one app on one simulator
+simnet on --down 500 --up 200 --delay 300 --loss 5  # custom
+simnet log on                                     # start network logging
+simnet status
+simnet off</pre>
+<p>
+  The command line and the menu bar app control the same extension, so you
+  can use them together.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<p><strong>Does SimNet slow down or change my Mac's own network?</strong><br>
+No. SimNet only acts on connections opened by iOS simulators. Safari, Mail,
+Xcode, and everything else on your Mac keep their normal connection.</p>
+
+<p><strong>Is SimNet a VPN?</strong><br>
+No. SimNet doesn't send your traffic to any server. Simulator connections it
+slows down are relayed on your Mac itself, to the same servers the apps were
+already contacting.</p>
+
+<p><strong>Is SimNet made by Apple?</strong><br>
+No. SimNet is an independent App and is not affiliated with, endorsed by, or
+sponsored by Apple Inc.</p>
+
+<p><strong>The switch in SimNet's menu is grayed out.</strong><br>
+SimNet's network extension hasn't been allowed yet. Open System Settings &gt;
+General &gt; Login Items &amp; Extensions &gt; Network Extensions, and turn on
+SimNet Proxy. If SimNet asks you to restart your Mac to finish installing the
+extension, restart it and open SimNet again.</p>
+
+<p><strong>I turned SimNet on, but my app still loads normally.</strong><br>
+Check that the simulator is selected under Simulators, or that All simulators
+is checked. If you entered bundle IDs under Only these apps, check that your
+app's bundle ID is among them; the Recently affected list in the menu shows
+the exact IDs SimNet has seen. If your app talks to a server on your Mac
+(localhost), check Also affect localhost connections.</p>
+
+<p><strong>In Airplane Mode, my app's reachability check still says it's online.</strong><br>
+That's expected. The simulator shares your Mac's network, so
+<code>NWPathMonitor</code> and <code>SCNetworkReachability</code> still
+report a network. Only the connections themselves fail or slow down. In
+Airplane Mode, URLSession reports "Could not connect to the server"
+(<code>NSURLErrorCannotConnectToHost</code>, -1004) rather than the
+"not connected to the internet" error you'd see on a device.</p>
+
+<p><strong>An app that uses NWConnection doesn't recover after I turn Airplane Mode off.</strong><br>
+A refused <code>NWConnection</code> waits for a network change that never
+comes in the Simulator, so it stays in its waiting state until the app calls
+<code>restart()</code>. URLSession and Safari recover on their own.</p>
+
+<p><strong>Why aren't DNS lookups affected?</strong><br>
+Every app in a simulator shares one DNS resolver, and refused or lost lookups
+can leave it stuck even after SimNet is switched off. So lookups always
+succeed, and SimNet acts on the connections that follow them.</p>
+
+<p><strong>HTTPS requests show as "not decrypted."</strong><br>
+That host's certificate couldn't be verified by your Mac, or the host needs a
+client certificate, or the app pins its certificate. The first connection to
+it fails, and later connections to that host pass through untouched, so your
+app's retry works. Connections that were already open when you turned
+logging on appear once the app reconnects.</p>
+
+<p><strong>Why does my app use HTTP/2 instead of HTTP/3 while logging?</strong><br>
+SimNet blocks QUIC (HTTP/3) while logging, so apps fall back to HTTP/2 or
+HTTP/1.1, which it can show you.</p>
+
+<p><strong>A simulator I booted after turning logging on isn't decrypting HTTPS.</strong><br>
+SimNet installs its certificate into newly booted simulators while the menu
+bar app is running. If you only use the command line, run
+<code>simnet log on</code> again.</p>
+
+<p><strong>How do I remove SimNet's certificate from a simulator?</strong><br>
+The certificate does nothing while SimNet isn't logging. To remove it, erase
+the simulator, or run <code>xcrun simctl keychain &lt;udid&gt; reset</code>.
+That also removes the simulator's saved logins and any other certificates
+you've added to it.</p>
+
+<p><strong>SimNet asks for my Developer folder.</strong><br>
+The first time you use Open App Data or record a simulator, SimNet asks you
+to choose ~/Library/Developer, where Xcode keeps the simulators. Choose that
+folder in the panel that opens. SimNet remembers it from then on.</p>
+
+<p><strong>My recording doesn't show touches.</strong><br>
+Touches aren't drawn while Simulator is in full screen. Check also that Show
+touches is on in Settings.</p>
+
+<p><strong>Which format should I save recordings in?</strong><br>
+MP4 (H.264), the default, plays everywhere, including every browser, Windows,
+and Slack. MP4 (HEVC) is smaller, but Windows needs a paid add-on to play it,
+and some browsers can't.</p>
+
+<p><strong>Does SimNet collect any of my data?</strong><br>
+No. SimNet doesn't require an account and doesn't collect, track, or share
+any personal information. The network log and your recordings stay on your
+Mac. See our <a href="SimNet-PRIVACY.html">Privacy Policy</a> for details.</p>
+
+<h2>Contact Us</h2>
+<p>
+  Have a question, found a bug, or have a feature request? Email us at
+  <a href="mailto:contact@port21.com">contact@port21.com</a>. Please include
+  your macOS and Xcode versions, the iOS version of the simulator, and a short
+  description of what you're seeing, and we'll get back to you as soon as we
+  can.
+</p>
+
+</body>
+</html>

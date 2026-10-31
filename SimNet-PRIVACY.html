@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - SimNet</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1c1c1e;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #6e6e73;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">SimNet &middot; Last updated: October 30, 2026</p>
+
+<p>
+  SimNet ("the App") is a Mac menu bar app for iOS developers. It puts iOS
+  simulators into Airplane Mode or onto a slow, lossy network, shows the
+  traffic the apps in them send, and records the simulators' screens. This
+  Privacy Policy explains how the App handles your information. The short
+  version: we don't collect any of it. Everything SimNet sees stays on your
+  Mac, and nothing is ever sent to us.
+</p>
+
+<h2>Information We Do Not Collect</h2>
+<p>
+  SimNet does not collect, store, transmit, or share any personal data or
+  usage data with us. Specifically, the App:
+</p>
+<ul>
+  <li>Does not require an account, login, or sign-up with us</li>
+  <li>Does not send any information about you, your Mac, or your apps to us, and we do not operate any servers for the App</li>
+  <li>Does not use analytics, advertising, crash-reporting, or tracking technologies</li>
+  <li>Does not use Location Services, the camera, the microphone, your contacts, or your photos</li>
+  <li>Does not use cookies</li>
+  <li>Does not sell, rent, or share your information with anyone</li>
+</ul>
+
+<h2>The Network Extension</h2>
+<p>
+  SimNet works through a network system extension, SimNet Proxy, that you
+  approve once in System Settings. macOS hands the extension each new
+  connection opened on your Mac so it can check which process opened it.
+  Connections from anything other than an iOS simulator, such as Safari,
+  Mail, or Xcode, are handed straight back to macOS untouched. SimNet doesn't
+  read, record, or change them.
+</p>
+<p>
+  For connections opened by iOS simulators, the extension applies the network
+  condition you chose: it refuses them (Airplane Mode), or relays them on your
+  Mac with limited bandwidth, added delay, and lost data. Relayed connections
+  go to the same servers the simulator's apps were already contacting. SimNet
+  never routes traffic through a server of its own, and it never changes your
+  Mac's own network connection.
+</p>
+<p>
+  SimNet keeps a short list of the apps it has recently affected, by bundle
+  ID and simulator, to show you in its menu. That list stays on your Mac and
+  is cleared when SimNet is switched off or quit.
+</p>
+
+<h2>Network Logging</h2>
+<p>
+  Network logging is off until you turn it on. While it's on, SimNet records
+  the requests and responses that the apps in the simulators you chose send
+  and receive, including their headers and bodies, so you can view them in
+  its log window. That can include sign-in tokens, cookies, and other
+  personal information the apps send. The log is kept in memory on your Mac,
+  is never sent anywhere, and is deleted when you clear it or quit SimNet. It
+  is only written to disk if you choose Save, to a file and folder you pick.
+  Saved logs contain headers and bodies in full, so treat them as sensitive.
+</p>
+<p>
+  To show HTTPS traffic, SimNet creates its own certificate authority (CA)
+  on your Mac and installs it only into the simulators you choose, using
+  Xcode's own tools. Your Mac itself never trusts it. The CA's private key is
+  stored on your Mac in a folder only you can read, and a copy the extension
+  needs is stored in a folder only the system can read. That copy is deleted
+  when you turn logging off. SimNet checks every server's certificate
+  against your Mac's trust settings and never weakens them.
+</p>
+
+<h2>Screen Recording</h2>
+<p>
+  SimNet records a simulator's screen only when you choose Record Simulator,
+  using the recorder built into Xcode. It records only the simulator's
+  screen, not the rest of your Mac. To draw your clicks and drags into the
+  video as touches, it follows where you click in that simulator's window
+  while recording. SimNet doesn't need or ask for macOS's Screen Recording or
+  Accessibility permissions.
+</p>
+<p>
+  The recording is held in a temporary folder on your Mac until you save it,
+  to a location you choose, or discard it. Recordings are never uploaded or
+  sent anywhere.
+</p>
+
+<h2>Your Developer Folder</h2>
+<p>
+  The first time you use Open App Data or record a simulator, SimNet asks you
+  to choose your Developer folder (~/Library/Developer), where Xcode keeps
+  the simulators. SimNet uses it only to list the apps installed on your
+  simulators, open their data folders in Finder when you ask, and hold a
+  screen recording until you save it. It doesn't read or change anything
+  else in that folder.
+</p>
+
+<h2>Information Stored on Your Mac</h2>
+<p>
+  To keep working between launches, the App saves the following on your Mac:
+</p>
+<ul>
+  <li>Your settings: the network condition, the simulators and bundle IDs you chose, your custom bandwidth, delay, and loss, and your screen recording preferences</li>
+  <li>Permission to reopen your Developer folder, if you granted it</li>
+  <li>If you've used network logging, SimNet's certificate authority and its private key, and the list of simulators it was installed in</li>
+</ul>
+<p>
+  This information stays on your Mac and is never sent to us. Deleting the
+  App removes it. A simulator that SimNet's certificate authority was
+  installed in keeps it until you erase that simulator, or reset its keychain
+  with <code>xcrun simctl keychain &lt;udid&gt; reset</code>. The certificate
+  does nothing while SimNet isn't logging.
+</p>
+
+<h2>Children's Privacy</h2>
+<p>
+  Because SimNet does not collect any information from any user, it does not
+  knowingly collect information from children under 13 or any other age.
+</p>
+
+<h2>Third-Party Services</h2>
+<p>
+  SimNet does not integrate with any third-party analytics, advertising,
+  crash-reporting, or other services, and it doesn't contact any server of
+  its own. The only network traffic it handles is the traffic of the apps in
+  your iOS simulators, which it passes on to the servers those apps were
+  already contacting, as described above.
+</p>
+
+<h2>Changes to This Policy</h2>
+<p>
+  If this Privacy Policy is ever updated, the revised version will be posted
+  here with an updated "Last updated" date.
+</p>
+
+<h2>Contact Us</h2>
+<p>
+  If you have any questions about this Privacy Policy, email us at
+  <a href="mailto:contact@port21.com">contact@port21.com</a>.
+</p>
+
+</body>
+</html>
