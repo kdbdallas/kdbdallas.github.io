@@ -8,7 +8,7 @@
       "description": "SimNet Put iOS Simulators into Airplane Mode or onto a slow, lossy network, see the traffic their apps send, and record what happens on screen, all without touching your Mac's own connection. SimNet is a macOS menu bar app with a matching command-line tool. It uses a network system extension that acts only on connections opened by iOS Simulators, so Safari, Slack, Xcode and everything else on your Mac keep their normal network.",
       "links": [
         {
-          "label": Coming Soon,
+          "label": "Coming Soon",
           "url": ""
         }
       ],
