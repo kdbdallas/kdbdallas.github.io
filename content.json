@@ -223,6 +223,10 @@
         {
           "label": "App Store",
           "url": "https://apps.apple.com/us/app/kdbdashboard/id6758755677"
+        },
+		{
+          "label": "GitHub",
+          "url": "https://github.com/kdbdallas/tvOS-Dashboard"
         }
       ],
       "image": "assets/KDBDashboard/KDBDashboard1.png",
