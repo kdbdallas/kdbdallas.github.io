@@ -81,7 +81,8 @@ fetch("content.json")
       "SimNet",
       "Dev Status Check",
 	  "DesktopExtend",
-      "Zelle",
+      "eShow",
+	  "Zelle",
       "Golfshot",
     ];
     $("#icon-composition").innerHTML = picks
