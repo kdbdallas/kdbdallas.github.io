@@ -86,6 +86,25 @@
         }
       ]
     },
+	{
+      "name": "Switcher",
+      "platform": "Mac",
+      "icon": "assets/Switcher/Icon.png",
+      "description": "Switcher turns your photo and video folders into a fresh, effortless slideshow for your Mac. Pick a folder, choose how long photos stay on screen, and which screens to display on, and let Switcher shuffle through your memories, inspiration, and media automatically.\n\nUse it on your main display for a calm changing screensaver, or bring the experience to every connected screen. With support for both photos and videos, Switcher makes every glance at your desktop feel new.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kdbdallas/Switcher"
+        }
+      ],
+      "image": "assets/Switcher/Switcher-Banner.png",
+      "screenshots": [
+        {
+          "src": "assets/Switcher/Switcher-Banner.png",
+          "alt": "Switcher"
+        }
+      ]
+    },
     {
       "name": "Zelle",
       "platform": "iPhone",
