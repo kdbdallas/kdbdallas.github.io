@@ -83,7 +83,6 @@ fetch("content.json")
 	  "DesktopExtend",
       "eShow",
 	  "Zelle",
-      "Golfshot",
     ];
     $("#icon-composition").innerHTML = picks
       .map((n) => d.projects.find((p) => p.name === n))
