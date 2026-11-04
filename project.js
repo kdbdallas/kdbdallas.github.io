@@ -10,14 +10,6 @@
 // Body text: a blank line starts a new paragraph; a single newline is a line break.
 // "link" (relative path or full URL) adds a small text link; "linkLabel" is optional
 // and defaults to showing the link itself. body, items and link can be combined.
-function paragraphs(text) {
-  return String(text || "")
-    .split(/\n\s*\n/)
-    .map((t) => t.trim())
-    .filter(Boolean)
-    .map((t) => `<p>${esc(t).replace(/\n/g, "<br>")}</p>`)
-    .join("");
-}
 function sectionsMarkup(p) {
   return (p.sections || [])
     .map(

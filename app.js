@@ -40,7 +40,7 @@ function openProject(p) {
   $(".close").hidden = false;
   $("#project-dialog").oncancel = null;
   $("#dialog-content").innerHTML =
-    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2><p>${esc(p.description || short[p.name] || "Explore this project on the original portfolio.")}</p>${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<a class="text-link" href="${esc(projectURL(p))}">Open project page →</a></div>`;
+    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2>${paragraphs(p.description || short[p.name] || "Explore this project on the original portfolio.")}${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<a class="text-link" href="${esc(projectURL(p))}">Open project page →</a></div>`;
   bindGallery(p, $("#dialog-content"));
   $("#project-dialog").showModal();
 }
@@ -51,8 +51,8 @@ loadContent()
     const picks = [
       "SimNet",
       "Dev Status Check",
-	  "DesktopExtend",
-	  "Switcher",
+      "DesktopExtend",
+      "Switcher",
       "eShow",
     ];
     $("#icon-composition").innerHTML = picks
@@ -109,4 +109,3 @@ $("#print").onclick = () => {
   document.querySelectorAll(".role").forEach((e) => (e.open = true));
   window.print();
 };
-

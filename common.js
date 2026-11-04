@@ -38,6 +38,14 @@ function loadContent() {
     return r.json();
   });
 }
+function paragraphs(text) {
+  return String(text || "")
+    .split(/\n\s*\n/)
+    .map((t) => t.trim())
+    .filter(Boolean)
+    .map((t) => `<p>${esc(t).replace(/\n/g, "<br>")}</p>`)
+    .join("");
+}
 function linkButtons(p) {
   return (p.links || [])
     .filter((l) => l.disabled || l.comingSoon || /^https?:/.test(l.url))
