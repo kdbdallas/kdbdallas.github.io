@@ -253,7 +253,8 @@
         }
       ],
 	  "sections": [
-  		{ "title": "Privacy Policy", "link": "KDBDashboard-PRIVACY.html" }
+  		{ "title": "Privacy Policy", "link": "privacy_policy.html" },
+		{ "title": "Terms of Service", "link": "terms_of_service.html" }
 	  ]
     },
     {
