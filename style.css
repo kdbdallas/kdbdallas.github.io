@@ -218,21 +218,20 @@ em {
   min-width: 160px;
   justify-content: center;
 }
-.button.is-coming-soon .button-label {
-  color: rgba(255, 255, 255, 0.7);
-}
 .coming-soon-overlay {
   position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: var(--ink);
-  font-size: 11px;
+  top: -9px;
+  right: -8px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: #4a5550;
+  color: #f8f8f3;
+  font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   white-space: nowrap;
-  transform: rotate(-9deg);
+  transform: rotate(4deg);
   pointer-events: none;
 }
 .text-link {
