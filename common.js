@@ -40,11 +40,15 @@ function loadContent() {
 }
 function linkButtons(p) {
   return (p.links || [])
-    .filter((l) => /^https?:/.test(l.url))
-    .map(
-      (l) =>
-        `<a class="button" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "Visit project")} ↗</a>`,
-    )
+    .filter((l) => l.disabled || l.comingSoon || /^https?:/.test(l.url))
+    .map((l) => {
+      const label = `${esc(l.label || "Visit project")} ↗`;
+      if (l.comingSoon)
+        return `<span class="button is-disabled is-coming-soon" aria-disabled="true"><span class="button-label">${label}</span><span class="coming-soon-overlay">Coming Soon</span></span>`;
+      if (l.disabled)
+        return `<span class="button is-disabled" aria-disabled="true">${label}</span>`;
+      return `<a class="button" href="${esc(l.url)}" target="_blank" rel="noopener">${label}</a>`;
+    })
     .join("");
 }
 
