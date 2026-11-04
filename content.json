@@ -251,7 +251,10 @@
           "src": "assets/KDBDashboard/KDBDashboard5.png",
           "alt": "KDB Dashboard screenshot 5"
         }
-      ]
+      ],
+	  "sections": [
+  		{ "title": "Privacy Policy", "link": "KDBDashboard-PRIVACY.html" }
+	  ]
     },
     {
       "name": "Tipper",

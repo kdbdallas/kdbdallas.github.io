@@ -1025,3 +1025,84 @@ body:has(dialog[open]) {
     font-size: 11px;
   }
 }
+
+/* Project detail page (project.html?app=...) */
+.dialog-links {
+  align-items: center;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  color: var(--muted);
+}
+.project-page {
+  max-width: 860px;
+  padding: 30px 0 90px;
+}
+.project-hero {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+.project-page .detail-icon {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 22px;
+}
+.project-page h1 {
+  margin: 12px 0 10px;
+}
+.project-page .lead {
+  max-width: none;
+  margin: 0;
+}
+.project-body,
+.project-section {
+  margin-top: 40px;
+}
+.project-body p,
+.project-section p,
+.project-section li {
+  line-height: 1.8;
+  color: var(--muted);
+}
+.project-section {
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
+}
+.project-section h3 {
+  font-size: 18px;
+}
+.project-page .screenshot-gallery {
+  margin-top: 30px;
+}
+.project-page .image-viewer {
+  position: fixed;
+  z-index: 20;
+  border-radius: 0;
+}
+body:has(.project-page.viewing) {
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .project-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .project-page .detail-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+  }
+}
+.section-link {
+  display: inline-flex;
+  gap: 6px;
+  margin-top: 4px;
+  color: var(--green);
+  overflow-wrap: anywhere;
+}
