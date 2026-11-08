@@ -22,11 +22,11 @@ function slug(p) {
   return p.slug || p.name.replace(/[^a-z0-9]/gi, "");
 }
 function projectURL(p) {
-  if (slug(p) == "SwiftlyGit") {
-    return "https://swiftlygit.app"
+  if (p == "SwiftlyGit") {
+    return "https://swiftlygit.app";
+  } else {
+    return "project.html?app=" + encodeURIComponent(slug(p));
   }
-
-  return "project.html?app=" + encodeURIComponent(slug(p));
 }
 function findProject(projects, key) {
   key = String(key || "").toLowerCase();
