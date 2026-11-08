@@ -1,5 +1,25 @@
 {
   "projects": [
+	{
+      "name": "SwiftlyGit",
+      "platform": "iPhone/iPad/Mac",
+      "original": "assets/img/SwiftlyGit/SwiftlyGitIcon-354.png",
+      "icon": "assets/img/SwiftlyGit/project.png",
+      "description": "SwiftlyGit is the full-featured Git client that travels with you—from a quick fix on your iPhone to your iPad and Mac desktop.\n\nReal work does not stop when you step away from your desk.\nSwiftlyGit brings the Git workflows you rely on to every Apple device—without leaving essential tools behind.",
+      "links": [
+        {
+          "label": "App Store",
+          "comingSoon": true
+        }
+      ],
+      "image": "assets/img/SwiftlyGit/screen-0.png",
+      "screenshots": [
+        {
+          "src": "assets/img/SwiftlyGit/screen-0.png",
+          "alt": "SwiftlyGit"
+        }
+      ]
+    },
     {
       "name": "SimNet",
       "platform": "Mac",

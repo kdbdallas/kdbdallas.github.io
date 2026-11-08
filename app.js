@@ -53,7 +53,7 @@ loadContent()
       "Dev Status Check",
       "DesktopExtend",
       "Switcher",
-      "eShow",
+      "SwiftlyGit",
     ];
     $("#icon-composition").innerHTML = picks
       .map((n) => d.projects.find((p) => p.name === n))
