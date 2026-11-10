@@ -1,0 +1,9 @@
+/* Keep feature screenshots directly beneath their descriptions. */
+.image-card .screenshot-preview {
+  margin-top: 1.5rem;
+}
+
+.screenshot-preview > span {
+  opacity: 1 !important;
+  transform: none !important;
+}

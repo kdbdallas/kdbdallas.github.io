@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SimNet puts iOS Simulators on bad networks, shows the traffic they send, and records their screens—without touching your Mac's connection." />
+    <title>SimNet — Bad networks for iOS Simulator</title>
+    <link rel="canonical" href="https://port21.com/SimNet/" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout-fixes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header container">
+        <a class="brand" href="#top" aria-label="SimNet home"><img src="assets/app-icon.png" alt="" width="44" height="44" /><span>SimNet</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">How it works</a>
+          <a class="nav-download" href="https://github.com/kdbdallas/SimNet/releases/latest" target="_blank" rel="noopener">Download <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero container" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>BAD NETWORKS AND NETWORK LOGGING FOR IOS SIMULATOR</p>
+            <h1>Break the network.<br /><span>Not your flow.</span></h1>
+            <p class="intro">SimNet puts iOS Simulators into Airplane Mode or onto a slow, lossy connection—while your Mac, Xcode, and everything else stay online.</p>
+            <div class="hero-actions">
+              <a class="download-button" href="https://apps.apple.com/us/app/simnet-simulator-tools/id6829008845" target="_blank" rel="noopener"><span class="download-icon" aria-hidden="true">↓</span><span><small>DOWNLOAD THE LATEST</small>Coming soon for Mac</span><span class="arrow" aria-hidden="true">↗</span></a>
+              <p>Built for<br /><strong>MacOS + Xcode</strong></p>
+            </div>
+          </div>
+          <div class="hero-orbit" aria-hidden="true">
+            <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
+            <img src="assets/app-icon.png" alt="" width="210" height="210" />
+            <span class="signal-node node-one"></span><span class="signal-node node-two"></span><span class="signal-node node-three"></span>
+          </div>
+        </section>
+
+        <section class="product-banner" aria-label="SimNet preview"><img src="assets/social-preview.png" alt="SimNet: slow, lossy or no network for iOS Simulators without touching your Mac's connection." /></section>
+
+        <section class="proof-strip"><div class="container proof-inner"><span>TEST THE MOMENTS REAL NETWORKS CREATE</span><div class="signal-list"><span>Airplane Mode</span><span>3G &amp; Edge</span><span>Packet Loss</span><span>Traffic Logs</span><span>Screen Recording</span></div></div></section>
+
+        <section class="features container" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">THE SIMULATOR, UNDER REAL PRESSURE</p>
+            <h2>Find the failures<br /><em>before your users do.</em></h2>
+            <p>Go from a stable connection to the exact condition you need, inspect what follows, and capture the result without ever interrupting the connection on your Mac.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card condition-card"><span class="feature-number">01</span><h3>Change the connection, live.</h3><p>Choose Airplane Mode, Edge, 3G, DSL, LTE, Wi‑Fi, or a custom mix of bandwidth, latency, and loss. Changes apply to connections already open.</p><div class="condition-list" aria-hidden="true"><span><i></i>Airplane Mode</span><span><i></i>3G</span><span><i></i>Custom profile</span></div></article>
+            <article class="feature-card image-card"><span class="feature-number">02</span><div><h3>See every request.</h3><p>Inspect HTTP, HTTPS, and WebSocket traffic from the simulator apps you select. Sort, pause, and save logs when you need the full picture.</p></div><button class="screenshot-preview" type="button" data-preview-src="assets/network-log.png" data-preview-alt="SimNet network log" aria-label="Enlarge the SimNet network log"><img src="assets/network-log.png" alt="SimNet network log" loading="lazy" /><span>View larger <b aria-hidden="true">↗</b></span></button></article>
+            <article class="feature-card image-card"><span class="feature-number">03</span><div><h3>Capture the experience.</h3><p>Record a booted simulator to MP4 from the menu bar, with touches and connection changes visible in the finished video.</p></div><button class="screenshot-preview" type="button" data-preview-src="assets/menu-bar.png" data-preview-alt="SimNet menu bar controls" aria-label="Enlarge SimNet menu bar controls"><img src="assets/menu-bar.png" alt="SimNet menu bar controls" loading="lazy" /><span>View larger <b aria-hidden="true">↗</b></span></button></article>
+          </div>
+        </section>
+
+        <section class="workflow-section" id="workflow"><div class="container workflow-grid"><div class="workflow-mark" aria-hidden="true"><span>⌁</span></div><div><p class="eyebrow">ONE TARGET. YOUR SIMULATORS.</p><h2>Your Mac keeps<br />moving <em>at full speed.</em></h2><p>SimNet’s network system extension acts only on connections opened by iOS Simulators. Safari, Slack, Xcode, and the rest of your Mac keep their ordinary connection.</p><ul><li><span>01</span>Pick the simulators and apps to affect</li><li><span>02</span>Apply a condition from the menu bar or CLI</li><li><span>03</span>Observe, log, record, and iterate</li></ul></div></div></section>
+
+        <section class="showcase container"><div><p class="eyebrow">DETAILS WHEN YOU NEED THEM</p><h2>From request to<br /><em>root cause.</em></h2><p>Open any exchange for headers, timings, TLS details, and bodies. Save a whole log or a single exchange as JSON.</p></div><button class="showcase-image screenshot-preview" type="button" data-preview-src="assets/network-log-details.png" data-preview-alt="SimNet network log details" aria-label="Enlarge SimNet network log details"><img src="assets/network-log-details.png" alt="SimNet network log details" loading="lazy" /><span>View larger <b aria-hidden="true">↗</b></span></button></section>
+
+        <section class="final-cta container"><div><p class="eyebrow">READY TO TEST THE EDGE CASES</p><h2>Make every network<br /><em>part of the build.</em></h2></div><div class="cta-action"><a class="download-button" href="https://apps.apple.com/us/app/simnet-simulator-tools/id6829008845" target="_blank" rel="noopener"><span class="download-icon" aria-hidden="true">↓</span><span><small>DOWNLOAD THE LATEST</small>macOS release</span><span class="arrow" aria-hidden="true">↗</span></a><span>Mac App Store coming soon</span></div></section>
+      </main>
+
+      <footer class="container site-footer"><a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="36" height="36" /><span>SimNet</span></a><p>Built for developers by <a href="https://port21.com">Port21</a></p><div><a href="../SimNet-SUPPORT.html">Support</a><a href="../SimNet-PRIVACY.html">Privacy</a></div></footer>
+    </div>
+    <dialog class="image-dialog" aria-label="Image preview"><button class="image-dialog-close" type="button" aria-label="Close image preview">×</button><img src="" alt="" /></dialog>
+    <script src="gallery.js" defer></script>
+  </body>
+</html>

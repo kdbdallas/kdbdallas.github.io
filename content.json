@@ -25,6 +25,7 @@
     {
       "name": "SimNet",
 	  "company": "Port21",
+	  "productpage": "/SimNet/",
       "platform": "Mac",
       "original": "assets/img/portfolio/SimNet/SimNetIcon-354.png",
       "icon": "assets/project-0.png",
