@@ -329,6 +329,7 @@
     {
       "name": "Easy JSON Prettier",
 	  "company": "Port21",
+	  "productpage": "/EasyJSONPrettier/",
 	  "tagline": "Make JSON human readable and interactive.",
       "platform": "Safari Extension",
       "icon": "assets/EasyJsonPrettier/Icon.png",
