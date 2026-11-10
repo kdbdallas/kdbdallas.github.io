@@ -121,6 +121,7 @@
     {
       "name": "Switcher",
 	  "company": "Port21",
+	  "productpage": "/Switcher/",
 	  "tagline": "Turn your photo and video folders into a slideshow for your Mac.",
       "platform": "Mac",
       "icon": "assets/Switcher/Icon.png",
