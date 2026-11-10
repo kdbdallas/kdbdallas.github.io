@@ -673,6 +673,24 @@ dialog .detail-icon {
   gap: 16px;
   flex-wrap: wrap;
 }
+.dialog-project-meta {
+  display: flex;
+  flex: 1 0 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 0;
+}
+.dialog-project-meta .text-link {
+  white-space: nowrap;
+}
+.project-company {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 550;
+  text-align: right;
+}
 .skip {
   position: absolute;
   left: 10px;

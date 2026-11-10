@@ -24,6 +24,8 @@ function slug(p) {
 function projectURL(p) {
   if (slug(p) == "SwiftlyGit") {
     return "https://swiftlygit.app";
+  } else if (slug(p) == "DevStatusCheck") {
+    return "DevStatusCheck/";
   } else {
     return "project.html?app=" + encodeURIComponent(slug(p));
   }

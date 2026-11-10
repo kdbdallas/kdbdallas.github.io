@@ -30,17 +30,19 @@ function render() {
     ? "Show selected projects ↑"
     : `View all ${list.length} projects ↓`;
   document
-    .querySelectorAll("[data-project]")
-    .forEach(
-      (b) => (b.onclick = () => openProject(data.projects[+b.dataset.project])),
-    );
+    .querySelectorAll("[data-project]").forEach((b) => {
+  	    b.onclick = () => {
+    	    const project = data.projects[+b.dataset.project];
+    	    openProject(project.productpage || project.name);
+  		};
+	});
 }
 function openProject(p) {
   $("#dialog-content").classList.remove("viewing");
   $(".close").hidden = false;
   $("#project-dialog").oncancel = null;
   $("#dialog-content").innerHTML =
-    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2>${paragraphs(p.description || short[p.name] || "Explore this project on the original portfolio.")}${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<a class="text-link" href="${esc(projectURL(p))}">Open project page →</a></div>`;
+    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2>${paragraphs(p.description || short[p.name] || "Explore this project on the original portfolio.")}${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<div class="dialog-project-meta"><a class="text-link" href="${esc(projectURL(p))}">Open project page →</a>${p.company ? `<span class="project-company">${esc(p.company)}</span>` : ""}</div></div>`;
   bindGallery(p, $("#dialog-content"));
   $("#project-dialog").showModal();
 }

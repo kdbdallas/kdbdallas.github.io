@@ -2,6 +2,8 @@
   "projects": [
 	{
       "name": "SwiftlyGit",
+	  "company": "Port21",
+	  "productpage": "https://swiftlygit.app",
       "platform": "iPhone/iPad/Mac",
       "original": "assets/SwiftlyGit/SwiftlyGitIcon-354.png",
       "icon": "assets/SwiftlyGit/project.png",
@@ -22,10 +24,11 @@
     },
     {
       "name": "SimNet",
+	  "company": "Port21",
       "platform": "Mac",
       "original": "assets/img/portfolio/SimNet/SimNetIcon-354.png",
       "icon": "assets/project-0.png",
-      "description": "SimNet Put iOS Simulators into Airplane Mode or onto a slow, lossy network, see the traffic their apps send, and record what happens on screen, all without touching your Mac's own connection. SimNet is a macOS menu bar app with a matching command-line tool. It uses a network system extension that acts only on connections opened by iOS Simulators, so Safari, Slack, Xcode and everything else on your Mac keep their normal network.",
+      "description": "SimNet lets you put iOS Simulators into Airplane Mode or onto a slow, lossy network, allowing you to see the traffic their apps send, and record what happens on screen, all without touching your Mac's own connection. SimNet is a macOS menu bar app with a matching command-line tool. It uses a network system extension that acts only on connections opened by iOS Simulators, so Safari, Slack, Xcode and everything else on your Mac keep their normal network.",
       "links": [
         {
           "label": "Mac App Store",
@@ -54,14 +57,15 @@
     },
     {
       "name": "Dev Status Check",
+	  "company": "Port21",
+	  "productpage": "/DevStatusCheck/",
       "platform": "iOS & Mac",
       "icon": "assets/project-1.png",
       "description": "Is it your code, or is GitHub down? Dev Status checks the status pages of 40+ services developers depend on and puts them in one list, so you can find out in seconds.\n\n\n\nSubscribe to the services you rely on, and Dev Status will alert you when one reports a problem, goes into maintenance, or comes back up. Add a widget and you'll see trouble on your Home Screen before you go looking for it.\n\nALERTS\nOnly the services you subscribe to send notifications. If all you care about is GitHub Actions and TestFlight, you won't hear about a Zoom outage.\n\nWIDGETS\nSmall, medium, and large widgets list your subscribed services with the worst problems at the top. When they don't all fit, rows shrink to make room and the widget tells you how many it couldn't show. Tap one to open that service in the app.\n\nTHE FULL LIST\nEvery provider has its own section. Collapsed, it still shows the worst status inside and how many services have problems. Filter down to issues or maintenance, or search for the service you're after. The provider's latest update appears right under each service, and scheduled maintenance shows its start and end times.\n\nRed is an issue, orange is maintenance in progress, yellow is maintenance coming up, and green means it's working.\n\nRefresh any time, or let the app refresh itself.\n\nNO ACCOUNTS, NO TRACKING\nThere are no ads, analytics, or third-party SDKs, and nothing to sign up for. Dev Status reads each provider's public status page directly, and alerts are created on your device, not pushed from a server.\n\nDev Status is an independent app and isn't affiliated with any other company.",
       "links": [
         {
           "label": "App Store",
-          "url": "https://apps.apple.com/us/app/dev-status-check/id6826245367",
-          "comingSoon": true
+          "url": "https://apps.apple.com/us/app/dev-status-check/id6826245367"
         }
       ],
       "image": "assets/screen-1.png",
@@ -90,6 +94,7 @@
     },
     {
       "name": "DesktopExtend",
+	  "company": "Port21",
       "platform": "Mac",
       "icon": "assets/DesktopExtend/Icon.png",
       "description": "Gives your Mac a second desktop that macOS treats as a genuine second monitor. Only one is visible at a time: push the cursor past the edge of the screen and the view scrolls across to the other desktop.\n\nUnlike Spaces, this is a real display — windows can be dragged onto it, it has its own menu bar, apps can be full-screened on it, and window positions persist. Unlike a physical monitor, it shares the one panel you already have.",
@@ -109,6 +114,7 @@
     },
     {
       "name": "Switcher",
+	  "company": "Port21",
       "platform": "Mac",
       "icon": "assets/Switcher/Icon.png",
       "description": "Switcher turns your photo and video folders into a fresh, effortless slideshow for your Mac. Pick a folder, choose how long photos stay on screen, and which screens to display on, and let Switcher shuffle through your memories, inspiration, and media automatically.\n\nUse it on your main display for a calm changing screensaver, or bring the experience to every connected screen. With support for both photos and videos, Switcher makes every glance at your desktop feel new.",
@@ -126,11 +132,85 @@
         }
       ]
     },
+	{
+      "name": "KDB Dashboard",
+	  "company": "Port21",
+      "platform": "Apple TV",
+      "icon": "assets/KDBDashboard/Icon.png",
+      "description": "Turn your Apple TV into a family dashboard: your Google and iCloud calendars, a slideshow from your favorite album, and the weather, all on one screen.",
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/kdbdashboard/id6758755677",
+          "comingSoon": true
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kdbdallas/tvOS-Dashboard"
+        }
+      ],
+      "image": "assets/KDBDashboard/KDBDashboard1.png",
+      "screenshots": [
+        {
+          "src": "assets/KDBDashboard/KDBDashboard1.png",
+          "alt": "KDB Dashboard screenshot 1"
+        },
+        {
+          "src": "assets/KDBDashboard/KDBDashboard2.png",
+          "alt": "KDB Dashboard screenshot 2"
+        },
+        {
+          "src": "assets/KDBDashboard/KDBDashboard3.png",
+          "alt": "KDB Dashboard screenshot 3"
+        },
+        {
+          "src": "assets/KDBDashboard/KDBDashboard4.png",
+          "alt": "KDB Dashboard screenshot 4"
+        },
+        {
+          "src": "assets/KDBDashboard/KDBDashboard5.png",
+          "alt": "KDB Dashboard screenshot 5"
+        }
+      ],
+      "sections": [
+        { "title": "Privacy Policy", "link": "privacy_policy.html" },
+        { "title": "Terms of Service", "link": "terms_of_service.html" }
+      ]
+    },
+    {
+      "name": "Golfshot",
+	  "company": "Shotzoom",
+      "platform": "iPhone/iPad/Watch",
+      "icon": "assets/project-7.png",
+      "description": "Golfshot The worlds most powerful and trusted on-course golf GPS, scoring, statistics, and auto shot tracking app. All from your iPhone, iPad, or Apple Watch.",
+      "links": [
+        {
+          "label": "golfshot.com",
+          "url": "https://golfshot.com"
+        }
+      ],
+      "image": "assets/screen-7.png",
+      "screenshots": [
+        {
+          "src": "assets/gallery-golfshot-details-0.png",
+          "alt": "Golfshot screenshot 1"
+        },
+        {
+          "src": "assets/gallery-golfshot-details-1.png",
+          "alt": "Golfshot screenshot 2"
+        },
+        {
+          "src": "assets/gallery-golfshot-details-2.png",
+          "alt": "Golfshot screenshot 3"
+        }
+      ]
+    },
     {
       "name": "Zelle",
+	  "company": "Early Warning",
       "platform": "iPhone",
       "icon": "assets/project-6.png",
-      "description": "Zelle Zelle\u00ae is a great way to send money to friends and family, even if they bank somewhere different than you do. That means it's super easy to get paid back, or split the costs of things like dinner. With Zelle\u00ae, the money goes directly into your bank account. And when money goes into your bank account directly, you can live delightfully. Zelle\u00ae is already in lots of banking apps, so look for it in yours today.",
+      "description": "Zelle\u00ae is a great way to send money to friends and family, even if they bank somewhere different than you do. That means it's super easy to get paid back, or split the costs of things like dinner. With Zelle\u00ae, the money goes directly into your bank account. And when money goes into your bank account directly, you can live delightfully. Zelle\u00ae is already in lots of banking apps, so look for it in yours today.",
       "links": [
         {
           "label": "www.zellepay.com",
@@ -178,37 +258,11 @@
       ]
     },
     {
-      "name": "Golfshot",
-      "platform": "iPhone/iPad/Watch",
-      "icon": "assets/project-7.png",
-      "description": "Golfshot The worlds most powerful and trusted on-course golf GPS, scoring, statistics, and auto shot tracking app. All from your iPhone, iPad, or Apple Watch.",
-      "links": [
-        {
-          "label": "golfshot.com",
-          "url": "https://golfshot.com"
-        }
-      ],
-      "image": "assets/screen-7.png",
-      "screenshots": [
-        {
-          "src": "assets/gallery-golfshot-details-0.png",
-          "alt": "Golfshot screenshot 1"
-        },
-        {
-          "src": "assets/gallery-golfshot-details-1.png",
-          "alt": "Golfshot screenshot 2"
-        },
-        {
-          "src": "assets/gallery-golfshot-details-2.png",
-          "alt": "Golfshot screenshot 3"
-        }
-      ]
-    },
-    {
       "name": "eShow",
+	  "company": "eShow",
       "platform": "iOS & Android",
       "icon": "assets/eShow/Icon.png",
-      "description": "eShow The central hub for all your conferences and events. Find and access your events, utilizing our many great features including: agenda setting, interactive event maps, social networking, and up-to-the-minute event updates sent directly to your device. Sync your account across all of your devices and get the most out of what your events have to offer with the eShow Events app.",
+      "description": "eShow is the central hub for all your conferences and events. Find and access your events, utilizing our many great features including: agenda setting, interactive event maps, social networking, and up-to-the-minute event updates sent directly to your device. Sync your account across all of your devices and get the most out of what your events have to offer with the eShow Events app.",
       "links": [
         {
           "label": "App Store",
@@ -236,51 +290,8 @@
       ]
     },
     {
-      "name": "KDB Dashboard",
-      "platform": "Apple TV",
-      "icon": "assets/KDBDashboard/Icon.png",
-      "description": "Turn your Apple TV into a family dashboard: your Google and iCloud calendars, a slideshow from your favorite album, and the weather, all on one screen.",
-      "links": [
-        {
-          "label": "App Store",
-          "url": "https://apps.apple.com/us/app/kdbdashboard/id6758755677",
-          "comingSoon": true
-        },
-        {
-          "label": "GitHub",
-          "url": "https://github.com/kdbdallas/tvOS-Dashboard"
-        }
-      ],
-      "image": "assets/KDBDashboard/KDBDashboard1.png",
-      "screenshots": [
-        {
-          "src": "assets/KDBDashboard/KDBDashboard1.png",
-          "alt": "KDB Dashboard screenshot 1"
-        },
-        {
-          "src": "assets/KDBDashboard/KDBDashboard2.png",
-          "alt": "KDB Dashboard screenshot 2"
-        },
-        {
-          "src": "assets/KDBDashboard/KDBDashboard3.png",
-          "alt": "KDB Dashboard screenshot 3"
-        },
-        {
-          "src": "assets/KDBDashboard/KDBDashboard4.png",
-          "alt": "KDB Dashboard screenshot 4"
-        },
-        {
-          "src": "assets/KDBDashboard/KDBDashboard5.png",
-          "alt": "KDB Dashboard screenshot 5"
-        }
-      ],
-      "sections": [
-        { "title": "Privacy Policy", "link": "privacy_policy.html" },
-        { "title": "Terms of Service", "link": "terms_of_service.html" }
-      ]
-    },
-    {
       "name": "Tipper",
+	  "company": "Port21",
       "platform": "iOS",
       "icon": "assets/Tipper/Icon.png",
       "description": "Easily figure out the tip you want to give. Get amounts for standard percentages, select a custom percentage, and even enter how much you want to spend total and get the appropriate tip amount. Stop doing the math in your head or reaching for a calculator. Find what you want quickly and easily.",
@@ -304,9 +315,10 @@
     },
     {
       "name": "Easy JSON Prettier",
+	  "company": "Port21",
       "platform": "Safari Extension",
       "icon": "assets/EasyJsonPrettier/Icon.png",
-      "description": "Easy JSON Prettier Make JSON in your browser Pretty while respecting your privacy. Finds JSON by content and content only, not by file extensions or headers. Make your JSON pretty and easy to manage. No network connections, no sniffing, your data stays local and is never seen. Just JSON how you want it.",
+      "description": "Easy JSON Prettier makes JSON in your browser Pretty while respecting your privacy. Finds JSON by content and content only, not by file extensions or headers. Make your JSON pretty and easy to manage. No network connections, no sniffing, your data stays local and is never seen. Just JSON how you want it.",
       "links": [
         {
           "label": "Mac App Store",
@@ -335,6 +347,7 @@
     },
     {
       "name": "iDeskCal",
+	  "company": "Port21",
       "platform": "Mac",
       "icon": "assets/iDeskCal/Icon.png",
       "description": "Have your calendar and to-do items show directly on your desktop so they are easily viewable. Allows you to add calendar events and to-dos from directly in the app with just a simple key command. Never miss another appointment with iDeskCal.",
@@ -365,6 +378,7 @@
     },
     {
       "name": "Newsprint",
+	  "company": "Port21",
       "platform": "iPhone",
       "icon": "assets/Newsprint/Icon.png",
       "description": "Your RSS feeds in your pocket, always ready to read no matter where you are. Never miss out on another post from your favorite sites.",
@@ -411,6 +425,7 @@
     },
     {
       "name": "Shipment",
+	  "company": "Port21",
       "platform": "Mac & iPhone",
       "original": "assets/img/portfolio/Shipment/ShipmentIcon.png",
       "icon": "assets/project-10.png",
@@ -442,6 +457,7 @@
     },
     {
       "name": "Remind You",
+	  "company": "Port21",
       "platform": "iPhone",
       "original": "assets/img/portfolio/RemindYou/RemindYouIcon.png",
       "icon": "assets/project-11.png",
@@ -461,6 +477,7 @@
     },
     {
       "name": "What2Text",
+	  "company": "Port21",
       "platform": "iPhone",
       "icon": "assets/W2T/Icon.png",
       "description": "Have you ever received a text from someone and you weren't sure quite how to respond? Reach for What2Text and let your social network give you advice on how to reply in just that perfect way.",
@@ -491,6 +508,7 @@
     },
     {
       "name": "Kid Flix",
+	  "company": "Port21",
       "platform": "iPhone",
       "icon": "assets/KidFlix/Icon.png",
       "description": "Allow your kids to use your iPhone to watch their favorite shows, without worrying that they will push a button or quit the app, etc. Features a built in web server to allow you to upload your videos to your device so they are available on the go, and you always know what they are watching.",
@@ -517,6 +535,7 @@
     },
     {
       "name": "Lacrosse Coach",
+	  "company": "Port21",
       "platform": "iPad",
       "original": "assets/img/portfolio/LacrosseCoach/LacrosseCoachIcon.png",
       "icon": "assets/project-14.png",
@@ -548,6 +567,7 @@
     },
     {
       "name": "LaxxTV",
+	  "company": "Port21",
       "platform": "iPhone/iPad",
       "icon": "assets/LaxxTV/Icon.png",
       "description": "The way to watch lacrosse! Whether your on the go or just relaxing on the sofa, reach for LaxxTV and see all the lacrosse content that you could want.",
@@ -578,6 +598,7 @@
     },
     {
       "name": "Citizens Bank",
+	  "company": "Port21",
       "platform": "iPhone",
       "original": "assets/img/portfolio/CitizensBank/CitizensBankIcon.png",
       "icon": "assets/project-16.png",
@@ -586,7 +607,7 @@
       "image": "assets/screen-16.png",
       "screenshots": [
         {
-          "src": "assets/gallery-citizensbank-details-0.png",
+          "src": "assets/gallery-cistizensbank-details-0.png",
           "alt": "Citizens Bank screenshot 1"
         },
         {
@@ -601,6 +622,7 @@
     },
     {
       "name": "iLiveFit",
+	  "company": "Moki Networks",
       "platform": "iPhone",
       "original": "assets/img/portfolio/iLiveFit/iLiveFitIcon.png",
       "icon": "assets/project-17.png",
@@ -652,6 +674,7 @@
     },
     {
       "name": "Salt Lake Tribune",
+	  "company": "Salt Lake Tribune",
       "platform": "iPad",
       "original": "assets/img/portfolio/SaltLakeTribune/SaltLakeTribuneIcon.png",
       "icon": "assets/project-18.png",
@@ -695,6 +718,7 @@
     },
     {
       "name": "Spoon Me",
+	  "company": "Moki Networks",
       "platform": "iPhone",
       "original": "assets/img/portfolio/SpoonMe/SpoonMeIcon.jpg",
       "icon": "assets/project-19.jpg",
@@ -765,8 +789,8 @@
     },
     {
       "role": "Owner / Developer",
-      "dates": "2007 - 2015",
-      "company": "HashBang Industries, Phoenix, Arizona",
+      "dates": "2007 - 2026",
+      "company": "Port21 / HashBang Industries, Phoenix, Arizona",
       "bullets": [
         "Technical Editor for Wiley and Sons Publishing \u2018Cocoa Touch for iPhone 3.0\u2019 book",
         "Technical reviewer for O\u2019Reilly\u2019s \u2018iPhone SDK Application Development\u2019, 1st Edition, book.",
