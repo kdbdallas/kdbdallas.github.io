@@ -99,6 +99,7 @@
     {
       "name": "DesktopExtend",
 	  "company": "Port21",
+	  "productpage": "/DesktopExtend/",
 	  "tagline": "Gives your Mac a second desktop.",
       "platform": "Mac",
       "icon": "assets/DesktopExtend/Icon.png",
