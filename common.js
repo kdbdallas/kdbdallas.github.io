@@ -22,6 +22,9 @@ function slug(p) {
   return p.slug || p.name.replace(/[^a-z0-9]/gi, "");
 }
 function projectURL(p) {
+  if (typeof p.productpage === "string" && p.productpage.trim()) {
+    return p.productpage;
+  }
   if (slug(p) == "SwiftlyGit") {
     return "https://swiftlygit.app";
   } else if (slug(p) == "DevStatusCheck") {

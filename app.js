@@ -30,12 +30,8 @@ function render() {
     ? "Show selected projects ↑"
     : `View all ${list.length} projects ↓`;
   document
-    .querySelectorAll("[data-project]").forEach((b) => {
-  	    b.onclick = () => {
-    	    const project = data.projects[+b.dataset.project];
-    	    openProject(project.productpage || project.name);
-  		};
-	});
+    .querySelectorAll("[data-project]")
+    .forEach((b) => (b.onclick = () => openProject(data.projects[+b.dataset.project])));
 }
 function openProject(p) {
   $("#dialog-content").classList.remove("viewing");
