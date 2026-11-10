@@ -31,7 +31,7 @@ function setMeta(title, description) {
     .setAttribute("content", description);
 }
 function renderProject(p) {
-  const blurb = short[p.name] || p.platform + " application";
+  const blurb = typeof p.tagline === "string" ? p.tagline.trim() : "";
   setMeta(`${p.name} — Dallas Brown`, blurb);
   const links = linkButtons(p);
   $("#project-page").innerHTML =

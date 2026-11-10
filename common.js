@@ -1,12 +1,5 @@
 // Shared by index.html (app.js) and project.html (project.js).
 const $ = (s) => document.querySelector(s);
-const short = {
-  SimNet: "Simulator Network Tools & More.",
-  "Dev Status Check": "Cloud & API outage alerts.",
-  Switcher: "Turn your photo and video folders into a slideshow for your Mac.",
-  "KDB Dashboard": "Calendar, Photos & Weather on your TV.",
-  DesktopExtend: "Gives your Mac a second desktop.",
-};
 const esc = (s) =>
   String(s || "").replace(
     /[&<>"']/g,

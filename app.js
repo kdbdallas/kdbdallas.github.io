@@ -21,7 +21,7 @@ function render() {
   $("#projects").innerHTML = (expanded ? list : list.slice(0, 6))
     .map(
       (p) =>
-        `<button class="project-card" data-project="${data.projects.indexOf(p)}" aria-label="View ${esc(p.name)} details"><div class="project-visual"><img loading="lazy" src="${esc(p.icon)}" alt="${esc(p.name)} app icon"><span>${esc(p.platform)}</span></div><div class="card-title"><h3>${esc(p.name)}</h3><span>↗</span></div><p>${esc(short[p.name] || p.platform + " application")}</p></button>`,
+        `<button class="project-card" data-project="${data.projects.indexOf(p)}" aria-label="View ${esc(p.name)} details"><div class="project-visual"><img loading="lazy" src="${esc(p.icon)}" alt="${esc(p.name)} app icon"><span>${esc(p.platform)}</span></div><div class="card-title"><h3>${esc(p.name)}</h3><span>↗</span></div><p>${esc(typeof p.tagline === "string" ? p.tagline.trim() : "")}</p></button>`,
     )
     .join("");
   $("#empty").hidden = list.length > 0;
@@ -38,7 +38,7 @@ function openProject(p) {
   $(".close").hidden = false;
   $("#project-dialog").oncancel = null;
   $("#dialog-content").innerHTML =
-    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2>${paragraphs(p.description || short[p.name] || "Explore this project on the original portfolio.")}${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<div class="dialog-project-meta"><a class="text-link" href="${esc(projectURL(p))}">Open project page →</a>${p.company ? `<span class="project-company">${esc(p.company)}</span>` : ""}</div></div>`;
+    `<img class="detail-icon" src="${esc(p.icon)}" alt=""><p class="eyebrow">${esc(p.platform)}</p><h2>${esc(p.name)}</h2>${paragraphs(p.description || p.tagline || "Explore this project on the original portfolio.")}${galleryMarkup(p)}<div class="dialog-links">${linkButtons(p)}<div class="dialog-project-meta"><a class="text-link" href="${esc(projectURL(p))}">Open project page →</a>${p.company ? `<span class="project-company">${esc(p.company)}</span>` : ""}</div></div>`;
   bindGallery(p, $("#dialog-content"));
   $("#project-dialog").showModal();
 }
