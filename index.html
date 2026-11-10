@@ -8,11 +8,17 @@
       content="Dallas Brown — iOS and Mac developer, mobile team lead, and builder since the first iPhone."
     />
     <title>Dallas Brown — iOS & Mac Developer</title>
+	<link rel="canonical" href="https://port21.com" />
     <link rel="stylesheet" href="style.css" />
     <script src="common.js" defer></script>
     <script src="app.js" defer></script>
 	<script data-goatcounter="https://kdbdallas.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+	<script>
+	  if (window.location.pathname.endsWith('/index.html')) {
+	    window.history.replaceState(null, '', window.location.pathname.replace(/index\.html$/, ''));
+	  }
+	</script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
