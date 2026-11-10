@@ -142,6 +142,7 @@
 	{
       "name": "KDB Dashboard",
 	  "company": "Port21",
+	  "productpage": "/KDBDashboard/",
 	  "tagline": "Calendar, Photos & Weather on your TV.",
       "platform": "Apple TV",
       "icon": "assets/KDBDashboard/Icon.png",
