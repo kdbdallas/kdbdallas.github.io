@@ -97,6 +97,34 @@
       ]
     },
     {
+      "name": "Markdown Viewer for Safari",
+      "company": "Port21",
+      "productpage": "/MarkdownViewerForSafari/",
+      "tagline": "Read Markdown right in Safari.",
+      "platform": "iPhone, iPhone Duo, iPad & Mac",
+      "icon": "MarkdownViewerForSafari/assets/app-icon.webp",
+      "description": "Open Markdown links as formatted pages in Safari, with GitHub-flavored tables and task lists, highlighted code blocks, and support for light and dark appearance. Switch between the raw source and the rendered page at any time.",
+      "image": "MarkdownViewerForSafari/assets/promo-banner.jpg",
+      "screenshots": [
+        {
+          "src": "MarkdownViewerForSafari/assets/mac.webp",
+          "alt": "Markdown Viewer in Safari on Mac"
+        },
+        {
+          "src": "MarkdownViewerForSafari/assets/iphone.webp",
+          "alt": "Markdown Viewer in Safari on iPhone"
+        },
+        {
+          "src": "MarkdownViewerForSafari/assets/duo-open.webp",
+          "alt": "Markdown Viewer in Safari on iPhone Duo"
+        },
+        {
+          "src": "MarkdownViewerForSafari/assets/ipad.webp",
+          "alt": "Markdown Viewer in Safari on iPad"
+        }
+      ]
+    },
+    {
       "name": "DesktopExtend",
 	  "company": "Port21",
 	  "productpage": "/DesktopExtend/",

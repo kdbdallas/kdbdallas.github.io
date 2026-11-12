@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#081226">
+    <meta name="description" content="Open Markdown links as formatted pages in Safari on iPhone, iPhone Duo, iPad, and Mac. Read documentation with highlighted code, tables, and task lists.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Markdown Viewer for Safari">
+    <meta property="og:description" content="Read Markdown right in Safari on iPhone, iPhone Duo, iPad, and Mac.">
+    <meta property="og:url" content="https://port21.com/MarkdownViewerForSafari/">
+    <meta property="og:image" content="https://port21.com/MarkdownViewerForSafari/assets/promo-banner.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Markdown source beside a formatted page in Safari">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Markdown Viewer for Safari</title>
+    <link rel="canonical" href="https://port21.com/MarkdownViewerForSafari/">
+    <link rel="icon" href="assets/Icon512.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/Icon512.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="page.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <img src="assets/app-icon.webp" width="42" height="42" alt="">
+          <span>Markdown Viewer <small>for Safari</small></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#preview">Preview</a>
+          <a href="#devices">Devices</a>
+          <a href="#setup">Setup</a>
+        </nav>
+        <a class="button button-quiet" href="support.html">Support</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="hero">
+        <section class="wrap hero-grid" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Safari extension</p>
+            <h1 id="hero-title">Read Markdown<br><span>in Safari.</span></h1>
+            <p class="intro">Open a Markdown link and read it as a formatted page. Headings, tables, task lists, and highlighted code make READMEs and documentation easier to scan.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#preview">Try the preview <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#setup">How to enable it <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <figure class="hero-art">
+            <img src="assets/hero.webp" srcset="assets/hero-small.webp 640w, assets/hero.webp 1024w" sizes="(max-width: 740px) calc(100vw - 40px), 54vw" width="1024" height="960" alt="The same Markdown file shown as raw source and as a formatted Safari page" fetchpriority="high">
+          </figure>
+        </section>
+        <ul class="wrap platform-strip" aria-label="Supported devices">
+          <li>iPhone</li>
+          <li>iPhone Duo</li>
+          <li>iPad</li>
+          <li>Mac</li>
+        </ul>
+      </div>
+
+      <section class="reading-section" id="preview" aria-labelledby="preview-title">
+        <div class="wrap reading-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Interactive preview</p>
+            <h2 id="preview-title">See the page<br>behind the syntax.</h2>
+            <p>Switch between Raw and Rendered to see how the same Markdown file looks in Safari.</p>
+            <dl class="feature-list">
+              <div><dt>GitHub-flavored Markdown</dt><dd>Read tables, task lists, and strikethrough with their formatting intact.</dd></div>
+              <div><dt>Syntax highlighting</dt><dd>Scan fenced code blocks with colors that distinguish keywords, strings, and more.</dd></div>
+              <div><dt>Light and dark appearance</dt><dd>Pages follow your system appearance.</dd></div>
+            </dl>
+          </div>
+
+          <div class="demo">
+            <div class="demo-toolbar">
+              <span class="demo-filename">field-notes.md</span>
+              <div class="segmented demo-controls" role="group" aria-label="Markdown view" hidden>
+                <button type="button" aria-pressed="false" aria-controls="demo-raw">Raw</button>
+                <button type="button" aria-pressed="true" aria-controls="demo-rendered">Rendered</button>
+              </div>
+            </div>
+            <div class="demo-stage">
+              <article class="demo-document" id="demo-rendered" aria-label="Rendered example">
+                <h3>Field Notes</h3>
+                <p>A weekend guide to the coast.</p>
+                <h4>Checklist</h4>
+                <ul class="checklist">
+                  <li><span class="checked" aria-label="Completed" role="img">✓</span> Save the route</li>
+                  <li><span aria-label="Incomplete" role="img"></span> Check the tide</li>
+                </ul>
+                <h4>Open the route</h4>
+                <pre><code><span class="keyword">const</span> route = <span class="string">'coast'</span>;
+<span class="function">openMap</span>(route);</code></pre>
+              </article>
+              <pre class="demo-raw" id="demo-raw" aria-label="Raw Markdown example" hidden><code><span class="raw-heading"># Field Notes</span>
+
+A weekend guide to the coast.
+
+<span class="raw-heading">## Checklist</span>
+
+- [x] Save the route
+- [ ] Check the tide
+
+<span class="raw-heading">## Open the route</span>
+
+```js
+const route = 'coast';
+openMap(route);
+```</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="devices-section" id="devices" aria-labelledby="devices-title">
+        <div class="wrap devices-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Screenshots</p>
+            <h2 id="devices-title">Markdown on every screen.</h2>
+            <p>See a rendered README on iPhone, iPhone Duo, iPad, and Mac.</p>
+            <div class="segmented device-controls" role="group" aria-label="Device screenshots" hidden>
+              <button type="button" aria-pressed="false" aria-controls="device-iphone">iPhone</button>
+              <button type="button" aria-pressed="false" aria-controls="device-duo">iPhone Duo</button>
+              <button type="button" aria-pressed="false" aria-controls="device-ipad">iPad</button>
+              <button type="button" aria-pressed="true" aria-controls="device-mac">Mac</button>
+            </div>
+          </div>
+          <div class="device-gallery">
+            <figure class="device-shot" id="device-mac">
+              <a href="assets/mac.webp" aria-label="View full-size Mac screenshot"><img src="assets/mac.webp" width="1280" height="800" alt="A rendered README in Safari on Mac, using dark appearance" loading="lazy"></a>
+              <figcaption>Mac <span aria-hidden="true">·</span> Dark appearance</figcaption>
+            </figure>
+            <figure class="device-shot" id="device-iphone">
+              <a href="assets/iphone.webp" aria-label="View full-size iPhone screenshot"><img src="assets/iphone.webp" width="662" height="1440" alt="A rendered README in Safari on iPhone, using dark appearance" loading="lazy"></a>
+              <figcaption>iPhone <span aria-hidden="true">·</span> Dark appearance</figcaption>
+            </figure>
+            <figure class="device-shot" id="device-duo">
+              <div class="duo-shots">
+                <a href="assets/duo-closed.webp" aria-label="View full-size iPhone Duo closed screenshot"><img src="assets/duo-closed.webp" width="990" height="1440" alt="A rendered README in Safari on iPhone Duo in its closed layout" loading="lazy"></a>
+                <a href="assets/duo-open.webp" aria-label="View full-size iPhone Duo open screenshot"><img src="assets/duo-open.webp" width="1440" height="1013" alt="A rendered README in Safari on iPhone Duo in its open layout" loading="lazy"></a>
+              </div>
+              <figcaption>iPhone Duo <span aria-hidden="true">·</span> Closed and open layouts</figcaption>
+            </figure>
+            <figure class="device-shot" id="device-ipad">
+              <a href="assets/ipad.webp" aria-label="View full-size iPad screenshot"><img src="assets/ipad.webp" width="1080" height="1440" alt="A rendered README in Safari on iPad, using dark appearance" loading="lazy"></a>
+              <figcaption>iPad <span aria-hidden="true">·</span> Dark appearance</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="setup-section" id="setup" aria-labelledby="setup-title">
+        <div class="wrap setup-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Getting started</p>
+            <h2 id="setup-title">Turn it on in Safari.</h2>
+            <p>Install the app, enable the extension, then open a Markdown link in Safari. Rendering happens on your device.</p>
+            <a class="button button-primary" href="support.html">Get setup help <span aria-hidden="true">→</span></a>
+          </div>
+          <dl class="setup-paths">
+            <div>
+              <dt>iPhone, iPhone Duo, and iPad</dt>
+              <dd>Open <strong>Settings › Apps › Safari › Extensions</strong>, select Markdown Viewer for Safari, and turn on Allow Extension.</dd>
+              <dd class="setup-note">On earlier versions, find Safari directly in Settings.</dd>
+            </div>
+            <div>
+              <dt>Mac</dt>
+              <dd>Open Safari and choose <strong>Safari › Settings › Extensions</strong>, then enable Markdown Viewer for Safari.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="brand" href="#top"><img src="assets/app-icon.webp" width="36" height="36" alt=""><span>Markdown Viewer <small>for Safari</small></span></a>
+        <div class="footer-links">
+          <a href="support.html">Support</a>
+          <a href="../privacy_policy.html">Privacy</a>
+          <a href="../terms_of_service.html">Terms</a>
+          <a href="../">Port21 <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
