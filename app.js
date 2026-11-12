@@ -19,10 +19,15 @@ function render() {
           : /tv/i.test(p.platform)),
   );
   $("#projects").innerHTML = (expanded ? list : list.slice(0, 6))
-    .map(
-      (p) =>
-        `<button class="project-card" data-project="${data.projects.indexOf(p)}" aria-label="View ${esc(p.name)} details"><div class="project-visual"><img loading="lazy" src="${esc(p.icon)}" alt="${esc(p.name)} app icon"><span>${esc(p.platform)}</span></div><div class="card-title"><h3>${esc(p.name)}</h3><span>↗</span></div><p>${esc(typeof p.tagline === "string" ? p.tagline.trim() : "")}</p></button>`,
-    )
+    .map((p) => {
+      const name = esc(p.name);
+      const cardContent = `<div class="project-visual"><img loading="lazy" src="${esc(p.icon)}" alt="${name} app icon"><span>${esc(p.platform)}</span></div><div class="card-title"><h3>${name}</h3><span>↗</span></div><p>${esc(typeof p.tagline === "string" ? p.tagline.trim() : "")}</p>`;
+      const productPage = typeof p.productpage === "string" ? p.productpage.trim() : "";
+      if (productPage) {
+        return `<a class="project-card" href="${esc(productPage)}" aria-label="Open ${name} product page">${cardContent}</a>`;
+      }
+      return `<button type="button" class="project-card" data-project="${data.projects.indexOf(p)}" aria-label="View ${name} details">${cardContent}</button>`;
+    })
     .join("");
   $("#empty").hidden = list.length > 0;
   $("#more").hidden = list.length <= 6;
