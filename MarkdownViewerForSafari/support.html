@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Support</title>
+<meta name="description" content="Help, answers to common questions, and contact details.">
+<style>
+  /* ── Brand ─────────────────────────────────────────────────────────────
+     Change these to re-skin the page. Everything else follows them. */
+  :root {
+    --accent: #F05033;
+    --accent-ink: #ffffff;
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --border: #d2d2d7;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #98989d;
+      --border: #38383a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+  header img { width: 72px; height: 72px; border-radius: 22.5%; flex: none; }
+  header img[hidden] { display: none; }
+  h1 { font-size: 32px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+  .tagline { margin: 4px 0 0; color: var(--muted); }
+
+  section { margin-top: 40px; }
+  h2 { font-size: 22px; margin: 0 0 12px; }
+  p { margin: 0 0 12px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+  .contact p { margin: 0; }
+  .button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .button:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .hint { color: var(--muted); font-size: 15px; margin-top: 12px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+
+  .faq { padding: 0; overflow: hidden; }
+  details { border-top: 1px solid var(--border); }
+  details:first-child { border-top: 0; }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 48px 16px 20px;
+    font-weight: 600;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute; right: 20px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted); font-weight: 400; font-size: 22px;
+  }
+  details[open] summary::after { content: "−"; }
+  details > div { padding: 0 20px 16px; color: var(--text); }
+  details > div p:last-child { margin-bottom: 0; }
+
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
+  dl.facts dt { color: var(--muted); }
+  dl.facts dd { margin: 0; }
+
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; text-align: center; }
+  footer a { color: inherit; }
+  footer .links a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img id="app-icon" alt="" hidden>
+    <div>
+      <h1><span data-field="appName"></span> Support</h1>
+      <p class="tagline" data-field="tagline"></p>
+    </div>
+  </header>
+
+  <noscript><p>Please turn on JavaScript to view this page, or email us for help.</p></noscript>
+
+  <section aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact us</h2>
+    <div class="card">
+      <div class="contact">
+        <p>Questions, problems, or ideas? We read every message and usually reply within <span data-field="responseTime"></span>.</p>
+        <a class="button" id="email-button" href="#">Email Support</a>
+      </div>
+      <p class="hint">Or write to <a id="email-link" href="#"></a>. Please tell us your device, iOS or iPadOS version, and the app version (shown in Settings), plus the steps that lead to the problem. A screenshot helps a lot.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq-title">
+    <h2 id="faq-title">Frequently asked questions</h2>
+    <div class="card faq" id="faq"></div>
+  </section>
+
+  <section aria-labelledby="troubleshoot-title">
+    <h2 id="troubleshoot-title">Troubleshooting</h2>
+    <div class="card">
+      <ul id="troubleshooting"></ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="about-title">
+    <h2 id="about-title">About the app</h2>
+    <div class="card">
+      <dl class="facts" id="facts"></dl>
+    </div>
+  </section>
+
+  <footer>
+    <p class="links" id="footer-links"></p>
+    <p>© <span id="year"></span> <span data-field="developer"></span></p>
+  </footer>
+</main>
+
+<script>
+/* ── App details ──────────────────────────────────────────────────────────
+   Everything specific to one app lives here. To reuse this page for
+   another app, replace this object; the markup and styles stay the same.
+   Answers may contain simple HTML. */
+const CONFIG = {
+  appName: "Markdown Viewer for Safari",
+  tagline: "Preview & Render .md Files",
+  developer: "Port21",
+  supportEmail: "contact@port21.com",
+  responseTime: "two business days",
+  iconURL: "MarkdownViewerForSafari/assets/Icon512.png",
+  appStoreURL: "https://apps.apple.com/us/app/markdown-viewer-for-safari/id6834016737",
+  privacyURL: "privacy_policy.html",
+  termsURL: "terms_of_service.html",
+
+  facts: [
+    ["Requires", "iOS 16.4, Mac 13.0 (Ventura) or later"],
+    ["Devices", "iPhone, iPhone Duo, iPad, Mac"],
+    ["Account", "None needed"],
+    ["Data", "Nothing stored or snooped, no analytics"],
+  ],
+
+  faq: [
+    {
+      q: "How do I turn on Markdown Viewer for Safari?",
+      a: "<p>You simply go into Settings, find the option 'Apps', scroll down and go to Safari, choose Extensions, tap on Markdown Viewer for Safari, select Allow Extension and then under Permissions decide if you want to be asked before Markdown Viewer for Safari converts the page, or if it should do it for all. Thats it! Enjoy Markdown you can read in Safari.</p>"
+    },
+    {
+      q: "Does the app collect my data?",
+      a: "<p>No. What you view never leave your device, and the app doesn't contact any servers. See the privacy policy for details.</p>"
+    },
+  ],
+
+  troubleshooting: [
+    "Stuck on something? Email us and we'll help.",
+  ],
+};
+
+(function render(c) {
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, html) => { const n = document.createElement(tag); if (html != null) n.innerHTML = html; return n; };
+
+  document.title = c.appName + " Support";
+  document.querySelectorAll("[data-field]").forEach((n) => { n.textContent = c[n.dataset.field] ?? ""; });
+
+  if (c.iconURL) { const img = $("app-icon"); img.src = c.iconURL; img.hidden = false; }
+
+  const mailto = "mailto:" + c.supportEmail + "?subject=" + encodeURIComponent(c.appName + " Support");
+  $("email-button").href = mailto;
+  $("email-link").href = mailto;
+  $("email-link").textContent = c.supportEmail;
+
+  const faq = $("faq");
+  c.faq.forEach(({ q, a }) => {
+    const d = el("details");
+    const s = el("summary"); s.textContent = q;
+    d.append(s, el("div", a));
+    faq.append(d);
+  });
+
+  const tips = $("troubleshooting");
+  c.troubleshooting.forEach((t) => tips.append(el("li", t)));
+
+  const facts = $("facts");
+  c.facts.forEach(([k, v]) => { const dt = el("dt"); dt.textContent = k; const dd = el("dd"); dd.textContent = v; facts.append(dt, dd); });
+
+  const links = $("footer-links");
+  [["Privacy Policy", c.privacyURL], ["Terms of Use", c.termsURL], ["App Store", c.appStoreURL]]
+    .filter(([, url]) => url)
+    .forEach(([label, url]) => { const a = el("a"); a.href = url; a.textContent = label; links.append(a); });
+
+  $("year").textContent = new Date().getFullYear();
+})(CONFIG);
+</script>
+</body>
+</html>
